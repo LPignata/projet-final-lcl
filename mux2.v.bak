@@ -1,7 +1,7 @@
 module mux2(
-	input [1:0] Dado,
-	input Escolha,
-	output Saida
+	input [1:0] I,
+	input S,
+	output O
 );
-	assign Saida = Dado[Escolha];
+	assign O = I[S];
 endmodule

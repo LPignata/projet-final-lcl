@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (symbol
-	(rect 544 -16 744 112)
+	(rect 672 16 872 144)
 	(text "memory" (rect 5 0 49 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -63,7 +63,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 64 128 264 240)
+	(rect 120 8 320 120)
 	(text "controlador" (rect 5 0 59 12)(font "Arial" ))
 	(text "inst2" (rect 8 96 31 108)(font "Arial" ))
 	(port
@@ -106,7 +106,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 552 288 680 384)
+	(rect 344 296 472 392)
 	(text "ula" (rect 5 0 21 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -141,3 +141,188 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 112 80))
 	)
 )
+(symbol
+	(rect 504 296 672 392)
+	(text "conversor_comp2bcd" (rect 5 0 130 14)(font "Arial" (font_size 8)))
+	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Comp[6..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "Comp[6..0]" (rect 21 27 81 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "sinal" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "sinal" (rect 122 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "LSB[3..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "LSB[3..0]" (rect 96 43 147 57)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 3))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "MSB[3..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "MSB[3..0]" (rect 93 59 147 73)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 80))
+	)
+)
+(symbol
+	(rect 752 312 952 392)
+	(text "conversor7seg" (rect 5 0 78 12)(font "Arial" ))
+	(text "inst5" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[3..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "data[3..0]" (rect 21 27 68 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "segments[6..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "segments[6..0]" (rect 117 27 191 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 64))
+	)
+)
+(symbol
+	(rect 752 400 952 480)
+	(text "conversor7seg" (rect 5 0 78 12)(font "Arial" ))
+	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[3..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "data[3..0]" (rect 21 27 68 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "segments[6..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "segments[6..0]" (rect 117 27 191 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 64))
+	)
+)
+(connector
+	(pt 672 344)
+	(pt 752 344)
+	(bus)
+)
+(connector
+	(pt 672 360)
+	(pt 736 360)
+	(bus)
+)
+(connector
+	(pt 736 360)
+	(pt 736 432)
+	(bus)
+)
+(connector
+	(pt 736 432)
+	(pt 752 432)
+	(bus)
+)
+(connector
+	(pt 952 344)
+	(pt 1032 344)
+	(bus)
+)
+(connector
+	(pt 952 432)
+	(pt 1032 432)
+	(bus)
+)
+(connector
+	(pt 672 328)
+	(pt 736 328)
+)
+(connector
+	(pt 736 328)
+	(pt 736 272)
+)
+(connector
+	(pt 736 272)
+	(pt 1032 272)
+)
+(connector
+	(pt 472 328)
+	(pt 504 328)
+	(bus)
+)
+(connector
+	(pt 120 56)
+	(pt 80 56)
+	(bus)
+)
+(connector
+	(pt 80 56)
+	(pt 80 88)
+	(bus)
+)
+(connector
+	(pt 80 88)
+	(pt 56 88)
+	(bus)
+)
+(connector
+	(pt 112 40)
+	(pt 112 -8)
+)
+(connector
+	(pt 120 40)
+	(pt 112 40)
+)
+(connector
+	(pt 112 40)
+	(pt 80 40)
+)
+(connector
+	(pt 112 -8)
+	(pt 656 -8)
+)
+(connector
+	(pt 656 -8)
+	(pt 656 48)
+)
+(connector
+	(pt 656 48)
+	(pt 672 48)
+)
+(connector
+	(pt 320 40)
+	(pt 344 40)
+	(bus)
+)
+(connector
+	(pt 344 40)
+	(pt 344 -40)
+	(bus)
+)
+(junction (pt 112 40))
+(text "INPUT " (rect 8 104 44 118)(font "Arial" (font_size 8)))
+(text "GPIO " (rect 8 88 39 102)(font "Arial" (font_size 8)))
+(text "HEX2 SINAL " (rect 1048 264 1121 278)(font "Arial" (font_size 8)))
+(text "HEX1 DIG2 " (rect 1048 336 1112 350)(font "Arial" (font_size 8)))
+(text "HEX0 DIG1 " (rect 1048 424 1112 438)(font "Arial" (font_size 8)))
+(text "CLOCK" (rect 32 32 73 46)(font "Arial" (font_size 8)))
+(text "COLUNA " (rect 8 120 62 134)(font "Arial" (font_size 8)))
+(text "GPIO INPUT LINHA  " (rect 288 -64 398 -50)(font "Arial" (font_size 8)))

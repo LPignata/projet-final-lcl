@@ -1,8 +1,0 @@
-module mult_mux2(
-	input [7:0] positivo,
-	input [7:0] negativo,
-	input seletor,
-	output [7:0] saida
-);
-
-endmodule

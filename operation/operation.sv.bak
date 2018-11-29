@@ -1,0 +1,4 @@
+module operation (
+	input ready,
+	input tecla [4:0]
+)

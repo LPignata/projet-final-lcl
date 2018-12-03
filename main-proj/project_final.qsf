@@ -53,14 +53,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE binbcd.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ula.sv
-set_global_assignment -name BDF_FILE top.bdf
-set_global_assignment -name VERILOG_FILE teclado.v
-set_global_assignment -name VERILOG_FILE decoder7.v
-set_global_assignment -name BDF_FILE main.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE comp2bin.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mult_mux2.sv
 set_location_assignment PIN_N25 -to SW[0]
 set_location_assignment PIN_N26 -to SW[1]
 set_location_assignment PIN_P25 -to SW[2]
@@ -487,3 +479,16 @@ set_location_assignment PIN_V23 -to GPIO_1[33]
 set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE memnum.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE seletorSAVE.sv
+set_global_assignment -name SYSTEMVERILOG_FILE seletorB.sv
+set_global_assignment -name SYSTEMVERILOG_FILE seletorA.sv
+set_global_assignment -name SYSTEMVERILOG_FILE operation.sv
+set_global_assignment -name SYSTEMVERILOG_FILE binbcd.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ula.sv
+set_global_assignment -name BDF_FILE top.bdf
+set_global_assignment -name VERILOG_FILE teclado.v
+set_global_assignment -name VERILOG_FILE decoder7.v
+set_global_assignment -name BDF_FILE main.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE comp2bin.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mult_mux2.sv

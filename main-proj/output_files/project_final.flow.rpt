@@ -1,5 +1,5 @@
 Flow report for project_final
-Thu Nov 29 23:13:17 2018
+Fri Nov 30 11:42:49 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 29 23:13:15 2018           ;
+; Flow Status                        ; Successful - Fri Nov 30 11:42:47 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; project_final                                   ;
 ; Top-level Entity Name              ; main                                            ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 353 / 33,216 ( 1 % )                            ;
-;     Total combinational functions  ; 343 / 33,216 ( 1 % )                            ;
-;     Dedicated logic registers      ; 158 / 33,216 ( < 1 % )                          ;
-; Total registers                    ; 158                                             ;
-; Total pins                         ; 96 / 475 ( 20 % )                               ;
+; Total logic elements               ; 337 / 33,216 ( 1 % )                            ;
+;     Total combinational functions  ; 331 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 150 / 33,216 ( < 1 % )                          ;
+; Total registers                    ; 150                                             ;
+; Total pins                         ; 98 / 475 ( 21 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/29/2018 23:13:03 ;
+; Start date & time ; 11/30/2018 11:42:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; project_final       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 110073159098167.154354038305952       ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 110073159098167.154358535401188       ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; main        ; Top        ;
@@ -96,10 +96,10 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4613 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 4933 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4575 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4583 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:12                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 4929 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4579 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4572 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

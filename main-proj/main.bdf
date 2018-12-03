@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect -120 -112 48 -96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK_50" (rect 5 0 61 12)(font "Arial" ))
+	(text "CLOCK_50" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -112 -16 56 0)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "KEY[0]" (rect 5 0 41 12)(font "Arial" ))
+	(text "KEY[0]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -52,6 +52,40 @@ applicable agreement for further details.
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect -176 0 -112 16))
+)
+(pin
+	(input)
+	(rect 608 176 776 192)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "LEDR[8]" (rect 5 0 48 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 544 192 608 208))
+)
+(pin
+	(input)
+	(rect 608 216 776 232)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "LEDR[7]" (rect 5 0 48 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 544 232 608 248))
 )
 (pin
 	(output)
@@ -312,7 +346,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1328 -144 1504 -128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "pin_name1" (rect 90 0 143 12)(font "Arial" ))
+	(text "LEDR[13]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -323,12 +357,13 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1504 -128 1568 -112))
 )
 (pin
 	(bidir)
 	(rect 160 -192 336 -176)
 	(text "BIDIR" (rect 151 0 175 10)(font "Arial" (font_size 6)))
-	(text "GPIO_1[35..0]" (rect 5 0 76 12)(font "Arial" ))
+	(text "GPIO_1[35..0]" (rect 5 0 75 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 120 4)(pt 98 4))
@@ -546,7 +581,7 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 216 224))
 	)
-	(annotation_block (parameter)(rect 760 -248 968 -104))
+	(annotation_block (parameter)(rect 760 -136 808 -104))
 )
 (symbol
 	(rect 952 56 1152 200)
@@ -806,6 +841,23 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 136 96))
 	)
 )
+(symbol
+	(rect 1192 392 1224 424)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 21 20 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 312 -104)
 	(pt 336 -104)
@@ -815,10 +867,6 @@ applicable agreement for further details.
 	(pt 336 -104)
 	(pt 336 -184)
 	(bus)
-)
-(connector
-	(pt 312 -72)
-	(pt 528 -72)
 )
 (connector
 	(pt 312 -88)
@@ -865,11 +913,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 760 88)
-	(pt 952 88)
-	(bus)
-)
-(connector
 	(pt 488 136)
 	(pt 952 136)
 	(bus)
@@ -881,11 +924,6 @@ applicable agreement for further details.
 (connector
 	(pt 472 152)
 	(pt 952 152)
-)
-(connector
-	(pt 1152 136)
-	(pt 1168 136)
-	(bus)
 )
 (connector
 	(pt 1248 144)
@@ -946,11 +984,6 @@ applicable agreement for further details.
 	(pt 1248 152)
 )
 (connector
-	(text "apaga_d[1]" (rect 1178 136 1232 148)(font "Arial" ))
-	(pt 1168 152)
-	(pt 1248 152)
-)
-(connector
 	(pt 1368 200)
 	(pt 1368 216)
 )
@@ -971,16 +1004,6 @@ applicable agreement for further details.
 (connector
 	(pt 1336 200)
 	(pt 1336 248)
-)
-(connector
-	(text "apaga_d[2]" (rect 1178 296 1232 308)(font "Arial" ))
-	(pt 1168 312)
-	(pt 1296 312)
-)
-(connector
-	(pt 1168 136)
-	(pt 1168 152)
-	(bus)
 )
 (connector
 	(pt 1448 296)
@@ -1016,24 +1039,6 @@ applicable agreement for further details.
 	(text "B[0]" (rect 1346 232 1366 244)(font "Arial" ))
 	(pt 1336 248)
 	(pt 1400 248)
-)
-(connector
-	(text "apaga_d[2..0]" (rect 1152 245 1164 312)(font "Arial" )(vertical))
-	(pt 1168 152)
-	(pt 1168 312)
-	(bus)
-)
-(connector
-	(pt 760 72)
-	(pt 936 72)
-)
-(connector
-	(pt 936 72)
-	(pt 936 40)
-)
-(connector
-	(pt 936 40)
-	(pt 1152 40)
 )
 (connector
 	(pt 1152 40)
@@ -1073,27 +1078,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1152 88)
-	(pt 1200 88)
-	(bus)
-)
-(connector
-	(pt 1200 88)
-	(pt 1200 16)
-	(bus)
-)
-(connector
 	(pt 1288 32)
 	(pt 1216 32)
-)
-(connector
-	(pt 1168 136)
-	(pt 1216 136)
-)
-(connector
-	(text "apaga_d[0]" (rect 1200 40 1212 94)(font "Arial" )(vertical))
-	(pt 1216 32)
-	(pt 1216 136)
 )
 (connector
 	(text "B[7..0]" (rect 1256 162 1268 195)(font "Arial" )(vertical))
@@ -1199,11 +1185,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 888 -56)
-	(pt 888 104)
-	(bus)
-)
-(connector
 	(pt 888 104)
 	(pt 888 352)
 	(bus)
@@ -1268,14 +1249,111 @@ applicable agreement for further details.
 	(pt 856 -24)
 	(pt 760 -24)
 )
+(connector
+	(pt 512 -72)
+	(pt 512 -120)
+)
+(connector
+	(pt 512 -120)
+	(pt 944 -120)
+)
+(connector
+	(pt 312 -72)
+	(pt 512 -72)
+)
+(connector
+	(pt 512 -72)
+	(pt 528 -72)
+)
+(connector
+	(pt 944 -120)
+	(pt 944 40)
+)
+(connector
+	(pt 944 40)
+	(pt 1152 40)
+)
+(connector
+	(pt 1200 56)
+	(pt 1200 16)
+	(bus)
+)
+(connector
+	(pt 1200 56)
+	(pt 888 56)
+	(bus)
+)
+(connector
+	(pt 888 -56)
+	(pt 888 56)
+	(bus)
+)
+(connector
+	(pt 888 56)
+	(pt 888 104)
+	(bus)
+)
+(connector
+	(pt 784 88)
+	(pt 784 184)
+)
+(connector
+	(pt 784 184)
+	(pt 776 184)
+)
+(connector
+	(pt 760 88)
+	(pt 784 88)
+	(bus)
+)
+(connector
+	(pt 824 88)
+	(pt 824 224)
+)
+(connector
+	(pt 824 224)
+	(pt 776 224)
+)
+(connector
+	(pt 784 88)
+	(pt 824 88)
+	(bus)
+)
+(connector
+	(pt 824 88)
+	(pt 952 88)
+	(bus)
+)
+(connector
+	(pt 1216 392)
+	(pt 1208 392)
+)
+(connector
+	(pt 1296 312)
+	(pt 1216 312)
+)
+(connector
+	(pt 1216 312)
+	(pt 1216 392)
+)
+(connector
+	(pt 1248 152)
+	(pt 1216 152)
+)
+(connector
+	(pt 1216 32)
+	(pt 1216 152)
+)
+(connector
+	(pt 1216 152)
+	(pt 1216 312)
+)
 (junction (pt 88 -104))
 (junction (pt 488 136))
 (junction (pt 472 -24))
 (junction (pt 1328 -32))
 (junction (pt 1344 -32))
 (junction (pt 1360 -32))
-(junction (pt 1168 136))
-(junction (pt 1168 152))
 (junction (pt 1336 200))
 (junction (pt 1368 200))
 (junction (pt 1352 200))
@@ -1283,6 +1361,12 @@ applicable agreement for further details.
 (junction (pt 1272 16))
 (junction (pt 888 104))
 (junction (pt 872 120))
+(junction (pt 512 -72))
+(junction (pt 888 56))
+(junction (pt 784 88))
+(junction (pt 824 88))
+(junction (pt 1216 312))
+(junction (pt 1216 152))
 (text "MEMORIA" (rect 680 -16 735 -2)(font "Arial" (font_size 8)))
 (text "resetar a calculadora" (rect -112 0 9 14)(font "Arial" (font_size 8)))
 (text "pronto para receber valor do teclado" (rect 1528 -144 1736 -130)(font "Arial" (font_size 8)))

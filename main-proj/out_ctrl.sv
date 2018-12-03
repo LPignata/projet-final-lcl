@@ -10,6 +10,8 @@ module out_ctrl(
 	output [2:0] apaga_d
 );
 
+initial numA = 4'b0000;
+
 // controle das saidas
 always @(negedge clk)
 	begin

@@ -1,0 +1,1217 @@
+|main
+GPIO_1[0] <> teclado:key_binder.GPIO_1[0]
+GPIO_1[1] <> teclado:key_binder.GPIO_1[1]
+GPIO_1[2] <> teclado:key_binder.GPIO_1[2]
+GPIO_1[3] <> teclado:key_binder.GPIO_1[3]
+GPIO_1[4] <> teclado:key_binder.GPIO_1[4]
+GPIO_1[5] <> teclado:key_binder.GPIO_1[5]
+GPIO_1[6] <> teclado:key_binder.GPIO_1[6]
+GPIO_1[7] <> teclado:key_binder.GPIO_1[7]
+GPIO_1[8] <> teclado:key_binder.GPIO_1[8]
+GPIO_1[9] <> teclado:key_binder.GPIO_1[9]
+GPIO_1[10] <> teclado:key_binder.GPIO_1[10]
+GPIO_1[11] <> teclado:key_binder.GPIO_1[11]
+GPIO_1[12] <> teclado:key_binder.GPIO_1[12]
+GPIO_1[13] <> teclado:key_binder.GPIO_1[13]
+GPIO_1[14] <> teclado:key_binder.GPIO_1[14]
+GPIO_1[15] <> teclado:key_binder.GPIO_1[15]
+GPIO_1[16] <> teclado:key_binder.GPIO_1[16]
+GPIO_1[17] <> teclado:key_binder.GPIO_1[17]
+GPIO_1[18] <> teclado:key_binder.GPIO_1[18]
+GPIO_1[19] <> teclado:key_binder.GPIO_1[19]
+GPIO_1[20] <> teclado:key_binder.GPIO_1[20]
+GPIO_1[21] <> teclado:key_binder.GPIO_1[21]
+GPIO_1[22] <> teclado:key_binder.GPIO_1[22]
+GPIO_1[23] <> teclado:key_binder.GPIO_1[23]
+GPIO_1[24] <> teclado:key_binder.GPIO_1[24]
+GPIO_1[25] <> teclado:key_binder.GPIO_1[25]
+GPIO_1[26] <> teclado:key_binder.GPIO_1[26]
+GPIO_1[27] <> teclado:key_binder.GPIO_1[27]
+GPIO_1[28] <> teclado:key_binder.GPIO_1[28]
+GPIO_1[29] <> teclado:key_binder.GPIO_1[29]
+GPIO_1[30] <> teclado:key_binder.GPIO_1[30]
+GPIO_1[31] <> teclado:key_binder.GPIO_1[31]
+GPIO_1[32] <> teclado:key_binder.GPIO_1[32]
+GPIO_1[33] <> teclado:key_binder.GPIO_1[33]
+GPIO_1[34] <> teclado:key_binder.GPIO_1[34]
+GPIO_1[35] <> teclado:key_binder.GPIO_1[35]
+CLOCK_50 => teclado:key_binder.CLOCK_50
+CLOCK_50 => out_ctrl:display_controller.clk
+CLOCK_50 => operation:main_controller.Clock
+HEX0[0] <= out_res:num_res.lsd[0]
+HEX0[1] <= out_res:num_res.lsd[1]
+HEX0[2] <= out_res:num_res.lsd[2]
+HEX0[3] <= out_res:num_res.lsd[3]
+HEX0[4] <= out_res:num_res.lsd[4]
+HEX0[5] <= out_res:num_res.lsd[5]
+HEX0[6] <= out_res:num_res.lsd[6]
+KEY[0] => operation:main_controller.clearIn
+HEX1[0] <= out_res:num_res.msd[0]
+HEX1[1] <= out_res:num_res.msd[1]
+HEX1[2] <= out_res:num_res.msd[2]
+HEX1[3] <= out_res:num_res.msd[3]
+HEX1[4] <= out_res:num_res.msd[4]
+HEX1[5] <= out_res:num_res.msd[5]
+HEX1[6] <= out_res:num_res.msd[6]
+HEX2[0] <= out_res:num_res.sinal[0]
+HEX2[1] <= out_res:num_res.sinal[1]
+HEX2[2] <= out_res:num_res.sinal[2]
+HEX2[3] <= out_res:num_res.sinal[3]
+HEX2[4] <= out_res:num_res.sinal[4]
+HEX2[5] <= out_res:num_res.sinal[5]
+HEX2[6] <= out_res:num_res.sinal[6]
+HEX4[0] <= out_num:num_b.lsd[0]
+HEX4[1] <= out_num:num_b.lsd[1]
+HEX4[2] <= out_num:num_b.lsd[2]
+HEX4[3] <= out_num:num_b.lsd[3]
+HEX4[4] <= out_num:num_b.lsd[4]
+HEX4[5] <= out_num:num_b.lsd[5]
+HEX4[6] <= out_num:num_b.lsd[6]
+HEX5[0] <= out_num:num_b.msd[0]
+HEX5[1] <= out_num:num_b.msd[1]
+HEX5[2] <= out_num:num_b.msd[2]
+HEX5[3] <= out_num:num_b.msd[3]
+HEX5[4] <= out_num:num_b.msd[4]
+HEX5[5] <= out_num:num_b.msd[5]
+HEX5[6] <= out_num:num_b.msd[6]
+HEX6[0] <= out_num:num_a.lsd[0]
+HEX6[1] <= out_num:num_a.lsd[1]
+HEX6[2] <= out_num:num_a.lsd[2]
+HEX6[3] <= out_num:num_a.lsd[3]
+HEX6[4] <= out_num:num_a.lsd[4]
+HEX6[5] <= out_num:num_a.lsd[5]
+HEX6[6] <= out_num:num_a.lsd[6]
+HEX7[0] <= out_num:num_a.msd[0]
+HEX7[1] <= out_num:num_a.msd[1]
+HEX7[2] <= out_num:num_a.msd[2]
+HEX7[3] <= out_num:num_a.msd[3]
+HEX7[4] <= out_num:num_a.msd[4]
+HEX7[5] <= out_num:num_a.msd[5]
+HEX7[6] <= out_num:num_a.msd[6]
+LEDR17 <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR16 <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR15 <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR14 <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR12 <= B[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR11 <= B[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR10 <= B[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR9 <= B[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR13 <= ready_not.DB_MAX_OUTPUT_PORT_TYPE
+LEDR8 => ~NO_FANOUT~
+LEDR7 => ~NO_FANOUT~
+
+
+|main|teclado:key_binder
+GPIO_1[0] <> <UNC>
+GPIO_1[1] <> <UNC>
+GPIO_1[2] <> <UNC>
+GPIO_1[3] <> <UNC>
+GPIO_1[4] <> <UNC>
+GPIO_1[5] <> <UNC>
+GPIO_1[6] <> <UNC>
+GPIO_1[7] <> <UNC>
+GPIO_1[8] <> <UNC>
+GPIO_1[9] <> <UNC>
+GPIO_1[10] <> <UNC>
+GPIO_1[12] <> <UNC>
+GPIO_1[14] <> <UNC>
+GPIO_1[16] <> <UNC>
+GPIO_1[18] <> <UNC>
+GPIO_1[19] <> GPIO_1[19]
+GPIO_1[20] <> <UNC>
+GPIO_1[21] <> GPIO_1[21]
+GPIO_1[22] <> <UNC>
+GPIO_1[23] <> GPIO_1[23]
+GPIO_1[24] <> <UNC>
+GPIO_1[25] <> GPIO_1[25]
+GPIO_1[26] <> <UNC>
+GPIO_1[27] <> <UNC>
+GPIO_1[28] <> <UNC>
+GPIO_1[29] <> <UNC>
+GPIO_1[30] <> <UNC>
+GPIO_1[31] <> <UNC>
+GPIO_1[32] <> <UNC>
+GPIO_1[33] <> <UNC>
+GPIO_1[34] <> <UNC>
+GPIO_1[35] <> <UNC>
+CLOCK_50 => CLOCK_50.IN1
+tecla[0] <= controlador:U0.tecla
+tecla[1] <= controlador:U0.tecla
+tecla[2] <= controlador:U0.tecla
+tecla[3] <= controlador:U0.tecla
+ready <= controlador:U0.ready
+
+
+|main|teclado:key_binder|controlador:U0
+clk => clk.IN4
+linhaN[0] <= linha[0].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[1] <= linha[1].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[2] <= linha[2].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[3] <= linha[3].DB_MAX_OUTPUT_PORT_TYPE
+colunaN[0] => coluna[0].IN1
+colunaN[1] => coluna[1].IN1
+colunaN[2] => coluna[2].IN1
+colunaN[3] => coluna[3].IN1
+tecla[0] <= tecla[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[1] <= tecla[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[2] <= tecla[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[3] <= tecla[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|teclado:key_binder|controlador:U0|Debouncer:d0
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|teclado:key_binder|controlador:U0|Debouncer:d1
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|teclado:key_binder|controlador:U0|Debouncer:d2
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|teclado:key_binder|controlador:U0|Debouncer:d3
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res
+lsd[0] <= decoder7:inst4.Out[0]
+lsd[1] <= decoder7:inst4.Out[1]
+lsd[2] <= decoder7:inst4.Out[2]
+lsd[3] <= decoder7:inst4.Out[3]
+lsd[4] <= decoder7:inst4.Out[4]
+lsd[5] <= decoder7:inst4.Out[5]
+lsd[6] <= decoder7:inst4.Out[6]
+reset => decoder7:inst4.apaga
+reset => decoder7:inst5.apaga
+res[0] => comp2bin:inst.in[0]
+res[0] => mult_mux2:inst2.positivo[0]
+res[1] => comp2bin:inst.in[1]
+res[1] => mult_mux2:inst2.positivo[1]
+res[2] => comp2bin:inst.in[2]
+res[2] => mult_mux2:inst2.positivo[2]
+res[3] => comp2bin:inst.in[3]
+res[3] => mult_mux2:inst2.positivo[3]
+res[4] => comp2bin:inst.in[4]
+res[4] => mult_mux2:inst2.positivo[4]
+res[5] => comp2bin:inst.in[5]
+res[5] => mult_mux2:inst2.positivo[5]
+res[6] => comp2bin:inst.in[6]
+res[6] => mult_mux2:inst2.positivo[6]
+res[7] => mult_mux2:inst2.seletor
+res[7] => comp2bin:inst.in[7]
+res[7] => mult_mux2:inst2.positivo[7]
+res[7] => inst521.IN0
+msd[0] <= decoder7:inst5.Out[0]
+msd[1] <= decoder7:inst5.Out[1]
+msd[2] <= decoder7:inst5.Out[2]
+msd[3] <= decoder7:inst5.Out[3]
+msd[4] <= decoder7:inst5.Out[4]
+msd[5] <= decoder7:inst5.Out[5]
+msd[6] <= decoder7:inst5.Out[6]
+sinal[0] <= <VCC>
+sinal[1] <= <VCC>
+sinal[2] <= <VCC>
+sinal[3] <= <VCC>
+sinal[4] <= <VCC>
+sinal[5] <= <VCC>
+sinal[6] <= inst521.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|decoder7:inst4
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+apaga => Out[0].OUTPUTSELECT
+apaga => Out[1].OUTPUTSELECT
+apaga => Out[2].OUTPUTSELECT
+apaga => Out[3].OUTPUTSELECT
+apaga => Out[4].OUTPUTSELECT
+apaga => Out[5].OUTPUTSELECT
+apaga => Out[6].OUTPUTSELECT
+Out[0] <= Out[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|binbcd:inst3
+bin[0] => Decoder0.IN7
+bin[1] => Decoder0.IN6
+bin[2] => Decoder0.IN5
+bin[3] => Decoder0.IN4
+bin[4] => Decoder0.IN3
+bin[5] => Decoder0.IN2
+bin[6] => Decoder0.IN1
+bin[7] => Decoder0.IN0
+bcd0[0] <= bcd0[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= bcd0[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= bcd0[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= bcd0[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= bcd1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= bcd1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= bcd1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= bcd1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|mult_mux2:inst2
+positivo[0] => saida.DATAA
+positivo[1] => saida.DATAA
+positivo[2] => saida.DATAA
+positivo[3] => saida.DATAA
+positivo[4] => saida.DATAA
+positivo[5] => saida.DATAA
+positivo[6] => saida.DATAA
+positivo[7] => saida.DATAA
+negativo[0] => saida.DATAB
+negativo[1] => saida.DATAB
+negativo[2] => saida.DATAB
+negativo[3] => saida.DATAB
+negativo[4] => saida.DATAB
+negativo[5] => saida.DATAB
+negativo[6] => saida.DATAB
+negativo[7] => saida.DATAB
+seletor => Decoder0.IN0
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst
+in[0] => ula:u1.A[0]
+in[1] => ula:u1.A[1]
+in[2] => ula:u1.A[2]
+in[3] => ula:u1.A[3]
+in[4] => ula:u1.A[4]
+in[5] => ula:u1.A[5]
+in[6] => ula:u1.A[6]
+in[7] => ula:u1.A[7]
+out[0] <= ula:u1.S[0]
+out[1] <= ula:u1.S[1]
+out[2] <= ula:u1.S[2]
+out[3] <= ula:u1.S[3]
+out[4] <= ula:u1.S[4]
+out[5] <= ula:u1.S[5]
+out[6] <= ula:u1.S[6]
+out[7] <= ula:u1.S[7]
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+op => op.IN9
+S[0] <= fadder:f0.port3
+S[1] <= fadder:f1.port3
+S[2] <= fadder:f2.port3
+S[3] <= fadder:f3.port3
+S[4] <= fadder:f4.port3
+S[5] <= fadder:f5.port3
+S[6] <= fadder:f6.port3
+S[7] <= fadder:f7.port3
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m0
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f0
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m1
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f1
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m2
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f2
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m3
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f3
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m4
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f4
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m5
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f5
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m6
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f6
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|mux2:m7
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f7
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_res:num_res|decoder7:inst5
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+apaga => Out[0].OUTPUTSELECT
+apaga => Out[1].OUTPUTSELECT
+apaga => Out[2].OUTPUTSELECT
+apaga => Out[3].OUTPUTSELECT
+apaga => Out[4].OUTPUTSELECT
+apaga => Out[5].OUTPUTSELECT
+apaga => Out[6].OUTPUTSELECT
+Out[0] <= Out[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_ctrl:display_controller
+estate[0] => Equal0.IN1
+estate[0] => Equal1.IN0
+estate[0] => Equal2.IN1
+estate[0] => Equal3.IN1
+estate[1] => Equal0.IN0
+estate[1] => Equal1.IN1
+estate[1] => Equal2.IN0
+estate[1] => Equal3.IN0
+mem1[0] => numA.DATAB
+mem1[0] => numA.DATAB
+mem1[0] => numA.DATAB
+mem1[1] => numA.DATAB
+mem1[1] => numA.DATAB
+mem1[1] => numA.DATAB
+mem1[2] => numA.DATAB
+mem1[2] => numA.DATAB
+mem1[2] => numA.DATAB
+mem1[3] => numA.DATAB
+mem1[3] => numA.DATAB
+mem1[3] => numA.DATAB
+mem1[4] => numA.DATAB
+mem1[4] => numA.DATAB
+mem1[4] => numA.DATAB
+mem1[5] => numA.DATAB
+mem1[5] => numA.DATAB
+mem1[5] => numA.DATAB
+mem1[6] => numA.DATAB
+mem1[6] => numA.DATAB
+mem1[6] => numA.DATAB
+mem1[7] => numA.DATAB
+mem1[7] => numA.DATAB
+mem1[7] => numA.DATAB
+mem2[0] => numB.DATAB
+mem2[0] => numB.DATAB
+mem2[1] => numB.DATAB
+mem2[1] => numB.DATAB
+mem2[2] => numB.DATAB
+mem2[2] => numB.DATAB
+mem2[3] => numB.DATAB
+mem2[3] => numB.DATAB
+mem2[4] => numB.DATAB
+mem2[4] => numB.DATAB
+mem2[5] => numB.DATAB
+mem2[5] => numB.DATAB
+mem2[6] => numB.DATAB
+mem2[6] => numB.DATAB
+mem2[7] => numB.DATAB
+mem2[7] => numB.DATAB
+result[0] => numRes.DATAB
+result[1] => numRes.DATAB
+result[2] => numRes.DATAB
+result[3] => numRes.DATAB
+result[4] => numRes.DATAB
+result[5] => numRes.DATAB
+result[6] => numRes.DATAB
+result[7] => numRes.DATAB
+clk => apaga_d[0]~reg0.CLK
+clk => apaga_d[1]~reg0.CLK
+clk => apaga_d[2]~reg0.CLK
+clk => numRes[0]~reg0.CLK
+clk => numRes[1]~reg0.CLK
+clk => numRes[2]~reg0.CLK
+clk => numRes[3]~reg0.CLK
+clk => numRes[4]~reg0.CLK
+clk => numRes[5]~reg0.CLK
+clk => numRes[6]~reg0.CLK
+clk => numRes[7]~reg0.CLK
+clk => numB[0]~reg0.CLK
+clk => numB[1]~reg0.CLK
+clk => numB[2]~reg0.CLK
+clk => numB[3]~reg0.CLK
+clk => numB[4]~reg0.CLK
+clk => numB[5]~reg0.CLK
+clk => numB[6]~reg0.CLK
+clk => numB[7]~reg0.CLK
+clk => numA[0]~reg0.CLK
+clk => numA[1]~reg0.CLK
+clk => numA[2]~reg0.CLK
+clk => numA[3]~reg0.CLK
+clk => numA[4]~reg0.CLK
+clk => numA[5]~reg0.CLK
+clk => numA[6]~reg0.CLK
+clk => numA[7]~reg0.CLK
+numA[0] <= numA[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numA[1] <= numA[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numA[2] <= numA[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numA[3] <= numA[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numA[4] <= numA[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numA[5] <= numA[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numA[6] <= numA[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numA[7] <= numA[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[0] <= numB[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[1] <= numB[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[2] <= numB[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[3] <= numB[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[4] <= numB[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[5] <= numB[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[6] <= numB[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numB[7] <= numB[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[0] <= numRes[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[1] <= numRes[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[2] <= numRes[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[3] <= numRes[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[4] <= numRes[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[5] <= numRes[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[6] <= numRes[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numRes[7] <= numRes[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+apaga_d[0] <= apaga_d[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+apaga_d[1] <= apaga_d[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+apaga_d[2] <= apaga_d[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|operation:main_controller
+ready => estate.OUTPUTSELECT
+ready => estate.OUTPUTSELECT
+ready => debug.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => memoryOut.OUTPUTSELECT
+ready => signedMemory.OUTPUTSELECT
+ready => signedNumberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => operation.OUTPUTSELECT
+ready => signedOperation.OUTPUTSELECT
+ready => byEstate.OUTPUTSELECT
+ready => byEstate.OUTPUTSELECT
+ready => byEstate.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => numberB.OUTPUTSELECT
+ready => signedNumberB.OUTPUTSELECT
+ready => readyOut~reg0.DATAIN
+tecla[0] => Equal1.IN7
+tecla[0] => Equal2.IN7
+tecla[0] => numberA.DATAB
+tecla[0] => numberB.DATAB
+tecla[0] => memoryOut.DATAB
+tecla[0] => LessThan0.IN8
+tecla[0] => Equal0.IN3
+tecla[0] => Equal3.IN2
+tecla[0] => Equal4.IN2
+tecla[0] => Equal5.IN3
+tecla[1] => Equal1.IN6
+tecla[1] => Equal2.IN6
+tecla[1] => numberA.DATAB
+tecla[1] => numberB.DATAB
+tecla[1] => memoryOut.DATAB
+tecla[1] => LessThan0.IN7
+tecla[1] => Equal0.IN2
+tecla[1] => Equal3.IN1
+tecla[1] => Equal4.IN3
+tecla[1] => Equal5.IN2
+tecla[2] => Equal1.IN5
+tecla[2] => Equal2.IN5
+tecla[2] => numberA.DATAB
+tecla[2] => numberB.DATAB
+tecla[2] => memoryOut.DATAB
+tecla[2] => LessThan0.IN6
+tecla[2] => Equal0.IN1
+tecla[2] => Equal3.IN3
+tecla[2] => Equal4.IN1
+tecla[2] => Equal5.IN1
+tecla[3] => Equal1.IN4
+tecla[3] => Equal2.IN4
+tecla[3] => numberA.DATAB
+tecla[3] => numberB.DATAB
+tecla[3] => memoryOut.DATAB
+tecla[3] => LessThan0.IN5
+tecla[3] => Equal0.IN0
+tecla[3] => Equal3.IN0
+tecla[3] => Equal4.IN0
+tecla[3] => Equal5.IN0
+clearIn => byEstate.OUTPUTSELECT
+clearIn => byEstate.OUTPUTSELECT
+clearIn => byEstate.OUTPUTSELECT
+clearIn => estate.OUTPUTSELECT
+clearIn => estate.OUTPUTSELECT
+clearIn => clearOut~reg0.DATAIN
+clearIn => numberB[2]~reg0.ENA
+clearIn => numberB[1]~reg0.ENA
+clearIn => numberB[0]~reg0.ENA
+clearIn => signedNumberB~reg0.ENA
+clearIn => numberB[3]~reg0.ENA
+clearIn => numberB[4]~reg0.ENA
+clearIn => numberB[5]~reg0.ENA
+clearIn => numberB[6]~reg0.ENA
+clearIn => numberB[7]~reg0.ENA
+clearIn => signedOperation~reg0.ENA
+clearIn => operation~reg0.ENA
+clearIn => numberA[0]~reg0.ENA
+clearIn => numberA[1]~reg0.ENA
+clearIn => numberA[2]~reg0.ENA
+clearIn => numberA[3]~reg0.ENA
+clearIn => numberA[4]~reg0.ENA
+clearIn => numberA[5]~reg0.ENA
+clearIn => numberA[6]~reg0.ENA
+clearIn => numberA[7]~reg0.ENA
+clearIn => signedNumberA~reg0.ENA
+clearIn => signedMemory~reg0.ENA
+clearIn => memoryOut[0]~reg0.ENA
+clearIn => memoryOut[1]~reg0.ENA
+clearIn => memoryOut[2]~reg0.ENA
+clearIn => memoryOut[3]~reg0.ENA
+clearIn => memoryOut[4]~reg0.ENA
+clearIn => memoryOut[5]~reg0.ENA
+clearIn => memoryOut[6]~reg0.ENA
+clearIn => memoryOut[7]~reg0.ENA
+clearIn => debug~reg0.ENA
+clearIn => readyOut~reg0.ENA
+Clock => signedNumberB~reg0.CLK
+Clock => numberB[0]~reg0.CLK
+Clock => numberB[1]~reg0.CLK
+Clock => numberB[2]~reg0.CLK
+Clock => numberB[3]~reg0.CLK
+Clock => numberB[4]~reg0.CLK
+Clock => numberB[5]~reg0.CLK
+Clock => numberB[6]~reg0.CLK
+Clock => numberB[7]~reg0.CLK
+Clock => signedOperation~reg0.CLK
+Clock => operation~reg0.CLK
+Clock => numberA[0]~reg0.CLK
+Clock => numberA[1]~reg0.CLK
+Clock => numberA[2]~reg0.CLK
+Clock => numberA[3]~reg0.CLK
+Clock => numberA[4]~reg0.CLK
+Clock => numberA[5]~reg0.CLK
+Clock => numberA[6]~reg0.CLK
+Clock => numberA[7]~reg0.CLK
+Clock => signedNumberA~reg0.CLK
+Clock => signedMemory~reg0.CLK
+Clock => memoryOut[0]~reg0.CLK
+Clock => memoryOut[1]~reg0.CLK
+Clock => memoryOut[2]~reg0.CLK
+Clock => memoryOut[3]~reg0.CLK
+Clock => memoryOut[4]~reg0.CLK
+Clock => memoryOut[5]~reg0.CLK
+Clock => memoryOut[6]~reg0.CLK
+Clock => memoryOut[7]~reg0.CLK
+Clock => debug~reg0.CLK
+Clock => readyOut~reg0.CLK
+Clock => estate[0]~reg0.CLK
+Clock => estate[1]~reg0.CLK
+Clock => clearOut~reg0.CLK
+Clock => byEstate~4.DATAIN
+memoryIn[0] => numberA.DATAB
+memoryIn[0] => numberB.DATAB
+memoryIn[1] => numberA.DATAB
+memoryIn[1] => numberB.DATAB
+memoryIn[2] => numberA.DATAB
+memoryIn[2] => numberB.DATAB
+memoryIn[3] => numberA.DATAB
+memoryIn[3] => numberB.DATAB
+memoryIn[4] => numberA.DATAB
+memoryIn[4] => numberB.DATAB
+memoryIn[5] => numberA.DATAB
+memoryIn[5] => numberB.DATAB
+memoryIn[6] => numberA.DATAB
+memoryIn[6] => numberB.DATAB
+memoryIn[7] => numberA.DATAB
+memoryIn[7] => numberB.DATAB
+result[0] => memoryOut.DATAB
+result[1] => memoryOut.DATAB
+result[2] => memoryOut.DATAB
+result[3] => memoryOut.DATAB
+result[4] => memoryOut.DATAB
+result[5] => memoryOut.DATAB
+result[6] => memoryOut.DATAB
+result[7] => memoryOut.DATAB
+memoryOut[0] <= memoryOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+memoryOut[1] <= memoryOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+memoryOut[2] <= memoryOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+memoryOut[3] <= memoryOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+memoryOut[4] <= memoryOut[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+memoryOut[5] <= memoryOut[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+memoryOut[6] <= memoryOut[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+memoryOut[7] <= memoryOut[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[0] <= numberA[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[1] <= numberA[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[2] <= numberA[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[3] <= numberA[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[4] <= numberA[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[5] <= numberA[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[6] <= numberA[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberA[7] <= numberA[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[0] <= numberB[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[1] <= numberB[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[2] <= numberB[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[3] <= numberB[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[4] <= numberB[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[5] <= numberB[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[6] <= numberB[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+numberB[7] <= numberB[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+operation <= operation~reg0.DB_MAX_OUTPUT_PORT_TYPE
+signedMemory <= signedMemory~reg0.DB_MAX_OUTPUT_PORT_TYPE
+signedNumberA <= signedNumberA~reg0.DB_MAX_OUTPUT_PORT_TYPE
+signedNumberB <= signedNumberB~reg0.DB_MAX_OUTPUT_PORT_TYPE
+signedOperation <= signedOperation~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clearOut <= clearOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readyOut <= readyOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estate[0] <= estate[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estate[1] <= estate[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+debug <= debug~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+op => op.IN9
+S[0] <= fadder:f0.port3
+S[1] <= fadder:f1.port3
+S[2] <= fadder:f2.port3
+S[3] <= fadder:f3.port3
+S[4] <= fadder:f4.port3
+S[5] <= fadder:f5.port3
+S[6] <= fadder:f6.port3
+S[7] <= fadder:f7.port3
+
+
+|main|ula:ula_circuit|mux2:m0
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f0
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|mux2:m1
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f1
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|mux2:m2
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f2
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|mux2:m3
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f3
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|mux2:m4
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f4
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|mux2:m5
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f5
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|mux2:m6
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f6
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|mux2:m7
+in0 => saida.DATAA
+in1 => saida.DATAB
+seletor => Decoder0.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|ula:ula_circuit|fadder:f7
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_num:num_b
+lsd[0] <= decoder7:inst2.Out[0]
+lsd[1] <= decoder7:inst2.Out[1]
+lsd[2] <= decoder7:inst2.Out[2]
+lsd[3] <= decoder7:inst2.Out[3]
+lsd[4] <= decoder7:inst2.Out[4]
+lsd[5] <= decoder7:inst2.Out[5]
+lsd[6] <= decoder7:inst2.Out[6]
+reset => decoder7:inst2.apaga
+num[0] => binbcd:inst.bin[0]
+num[1] => binbcd:inst.bin[1]
+num[2] => binbcd:inst.bin[2]
+num[3] => binbcd:inst.bin[3]
+num[4] => binbcd:inst.bin[4]
+num[5] => binbcd:inst.bin[5]
+num[6] => binbcd:inst.bin[6]
+num[7] => binbcd:inst.bin[7]
+msd[0] <= decoder7:inst3.Out[0]
+msd[1] <= decoder7:inst3.Out[1]
+msd[2] <= decoder7:inst3.Out[2]
+msd[3] <= decoder7:inst3.Out[3]
+msd[4] <= decoder7:inst3.Out[4]
+msd[5] <= decoder7:inst3.Out[5]
+msd[6] <= decoder7:inst3.Out[6]
+
+
+|main|out_num:num_b|decoder7:inst2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+apaga => Out[0].OUTPUTSELECT
+apaga => Out[1].OUTPUTSELECT
+apaga => Out[2].OUTPUTSELECT
+apaga => Out[3].OUTPUTSELECT
+apaga => Out[4].OUTPUTSELECT
+apaga => Out[5].OUTPUTSELECT
+apaga => Out[6].OUTPUTSELECT
+Out[0] <= Out[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_num:num_b|binbcd:inst
+bin[0] => Decoder0.IN7
+bin[1] => Decoder0.IN6
+bin[2] => Decoder0.IN5
+bin[3] => Decoder0.IN4
+bin[4] => Decoder0.IN3
+bin[5] => Decoder0.IN2
+bin[6] => Decoder0.IN1
+bin[7] => Decoder0.IN0
+bcd0[0] <= bcd0[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= bcd0[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= bcd0[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= bcd0[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= bcd1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= bcd1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= bcd1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= bcd1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_num:num_b|decoder7:inst3
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+apaga => Out[0].OUTPUTSELECT
+apaga => Out[1].OUTPUTSELECT
+apaga => Out[2].OUTPUTSELECT
+apaga => Out[3].OUTPUTSELECT
+apaga => Out[4].OUTPUTSELECT
+apaga => Out[5].OUTPUTSELECT
+apaga => Out[6].OUTPUTSELECT
+Out[0] <= Out[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_num:num_a
+lsd[0] <= decoder7:inst2.Out[0]
+lsd[1] <= decoder7:inst2.Out[1]
+lsd[2] <= decoder7:inst2.Out[2]
+lsd[3] <= decoder7:inst2.Out[3]
+lsd[4] <= decoder7:inst2.Out[4]
+lsd[5] <= decoder7:inst2.Out[5]
+lsd[6] <= decoder7:inst2.Out[6]
+reset => decoder7:inst2.apaga
+num[0] => binbcd:inst.bin[0]
+num[1] => binbcd:inst.bin[1]
+num[2] => binbcd:inst.bin[2]
+num[3] => binbcd:inst.bin[3]
+num[4] => binbcd:inst.bin[4]
+num[5] => binbcd:inst.bin[5]
+num[6] => binbcd:inst.bin[6]
+num[7] => binbcd:inst.bin[7]
+msd[0] <= decoder7:inst3.Out[0]
+msd[1] <= decoder7:inst3.Out[1]
+msd[2] <= decoder7:inst3.Out[2]
+msd[3] <= decoder7:inst3.Out[3]
+msd[4] <= decoder7:inst3.Out[4]
+msd[5] <= decoder7:inst3.Out[5]
+msd[6] <= decoder7:inst3.Out[6]
+
+
+|main|out_num:num_a|decoder7:inst2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+apaga => Out[0].OUTPUTSELECT
+apaga => Out[1].OUTPUTSELECT
+apaga => Out[2].OUTPUTSELECT
+apaga => Out[3].OUTPUTSELECT
+apaga => Out[4].OUTPUTSELECT
+apaga => Out[5].OUTPUTSELECT
+apaga => Out[6].OUTPUTSELECT
+Out[0] <= Out[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_num:num_a|binbcd:inst
+bin[0] => Decoder0.IN7
+bin[1] => Decoder0.IN6
+bin[2] => Decoder0.IN5
+bin[3] => Decoder0.IN4
+bin[4] => Decoder0.IN3
+bin[5] => Decoder0.IN2
+bin[6] => Decoder0.IN1
+bin[7] => Decoder0.IN0
+bcd0[0] <= bcd0[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= bcd0[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= bcd0[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= bcd0[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= bcd1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= bcd1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= bcd1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= bcd1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_num:num_a|decoder7:inst3
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+apaga => Out[0].OUTPUTSELECT
+apaga => Out[1].OUTPUTSELECT
+apaga => Out[2].OUTPUTSELECT
+apaga => Out[3].OUTPUTSELECT
+apaga => Out[4].OUTPUTSELECT
+apaga => Out[5].OUTPUTSELECT
+apaga => Out[6].OUTPUTSELECT
+Out[0] <= Out[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+

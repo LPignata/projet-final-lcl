@@ -1522,12 +1522,6 @@ applicable agreement for further details.
 	(pt 1416 384)
 )
 (connector
-	(text "apagar[2..0]" (rect 1320 428 1332 487)(font "Arial" )(vertical))
-	(pt 1344 384)
-	(pt 1344 528)
-	(bus)
-)
-(connector
 	(pt 1400 248)
 	(pt 1400 368)
 )
@@ -1568,6 +1562,12 @@ applicable agreement for further details.
 	(pt 1080 368)
 	(pt 1080 392)
 )
+(connector
+	(text "apaga[2..0]" (rect 1320 428 1332 483)(font "Arial" )(vertical))
+	(pt 1344 384)
+	(pt 1344 528)
+	(bus)
+)
 (junction (pt 88 -104))
 (junction (pt 1520 416))
 (junction (pt 1536 416))
@@ -1592,3 +1592,4 @@ applicable agreement for further details.
 (text "numero B no 7seg" (rect 1848 328 1951 342)(font "Arial" (font_size 8)))
 (text "numero B em binário" (rect 1840 424 1955 438)(font "Arial" (font_size 8)))
 (text "resultado no 7seg" (rect 1848 504 1950 518)(font "Arial" (font_size 8)))
+(text "numero A em binario" (rect 1792 120 1908 134)(font "Arial" (font_size 8)))

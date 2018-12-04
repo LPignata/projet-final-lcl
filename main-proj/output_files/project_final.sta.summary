@@ -2,28 +2,84 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'CLOCK_50'
-Slack : -4.097
-TNS   : -396.378
+Type  : Slow Model Setup 'out_ctrl:inst|numA[2]'
+Slack : -3.008
+TNS   : -8.541
 
-Type  : Slow Model Hold 'CLOCK_50'
-Slack : 0.391
+Type  : Slow Model Setup 'out_ctrl:inst|numRes[0]'
+Slack : -2.860
+TNS   : -17.571
+
+Type  : Slow Model Setup 'out_ctrl:inst|numB[2]'
+Slack : -2.700
+TNS   : -8.477
+
+Type  : Slow Model Hold 'out_ctrl:inst|numRes[0]'
+Slack : -4.335
+TNS   : -23.977
+
+Type  : Slow Model Hold 'out_ctrl:inst|numA[2]'
+Slack : -1.284
+TNS   : -3.562
+
+Type  : Slow Model Hold 'out_ctrl:inst|numB[2]'
+Slack : -1.042
+TNS   : -2.883
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -28.380
+
+Type  : Slow Model Minimum Pulse Width 'out_ctrl:inst|numRes[0]'
+Slack : 0.077
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
-Slack : -1.380
-TNS   : -125.380
-
-Type  : Fast Model Setup 'CLOCK_50'
-Slack : -1.457
-TNS   : -129.223
-
-Type  : Fast Model Hold 'CLOCK_50'
-Slack : 0.215
+Type  : Slow Model Minimum Pulse Width 'out_ctrl:inst|numA[2]'
+Slack : 0.500
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Type  : Slow Model Minimum Pulse Width 'out_ctrl:inst|numB[2]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'out_ctrl:inst|numA[2]'
+Slack : -1.074
+TNS   : -2.897
+
+Type  : Fast Model Setup 'out_ctrl:inst|numRes[0]'
+Slack : -1.059
+TNS   : -6.336
+
+Type  : Fast Model Setup 'out_ctrl:inst|numB[2]'
+Slack : -1.049
+TNS   : -3.197
+
+Type  : Fast Model Hold 'out_ctrl:inst|numRes[0]'
+Slack : -2.176
+TNS   : -12.863
+
+Type  : Fast Model Hold 'out_ctrl:inst|numA[2]'
+Slack : -0.917
+TNS   : -2.601
+
+Type  : Fast Model Hold 'out_ctrl:inst|numB[2]'
+Slack : -0.800
+TNS   : -2.318
+
+Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -1.380
-TNS   : -125.380
+TNS   : -28.380
+
+Type  : Fast Model Minimum Pulse Width 'out_ctrl:inst|numRes[0]'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'out_ctrl:inst|numA[2]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'out_ctrl:inst|numB[2]'
+Slack : 0.500
+TNS   : 0.000
 
 ------------------------------------------------------------

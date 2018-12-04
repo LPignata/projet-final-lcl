@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project_final
-Tue Dec 04 20:22:30 2018
+Tue Dec 04 20:35:14 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,16 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "out_res:inst4|comp2bin:inst|ula:u1|fadder:f7"
- 12. Port Connectivity Checks: "out_res:inst4|comp2bin:inst|ula:u1"
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -45,20 +36,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 04 20:22:30 2018           ;
+; Analysis & Synthesis Status        ; Failed - Tue Dec 04 20:35:14 2018               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; project_final                                   ;
-; Top-level Entity Name              ; teste                                           ;
+; Top-level Entity Name              ; main                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 173                                             ;
-;     Total combinational functions  ; 173                                             ;
-;     Dedicated logic registers      ; 27                                              ;
-; Total registers                    ; 27                                              ;
-; Total pins                         ; 76                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -68,7 +59,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; teste              ; project_final      ;
+; Top-level entity name                                                      ; main               ; project_final      ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Verilog Show LMF Mapping Messages                                          ; Off                ;                    ;
 ; Verilog Version                                                            ; SystemVerilog_2005 ; Verilog_2001       ;
@@ -159,170 +150,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+---------+
-; binbcd.sv                        ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/binbcd.sv    ;         ;
-; ula.sv                           ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/ula.sv       ;         ;
-; decoder7.v                       ; yes             ; User Verilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/decoder7.v   ;         ;
-; comp2bin.sv                      ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/comp2bin.sv  ;         ;
-; mult_mux2.sv                     ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/mult_mux2.sv ;         ;
-; out_ctrl.sv                      ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_ctrl.sv  ;         ;
-; out_num.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_num.bdf  ;         ;
-; out_res.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_res.bdf  ;         ;
-; teste.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/teste.bdf    ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 173       ;
-;                                             ;           ;
-; Total combinational functions               ; 173       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 83        ;
-;     -- 3 input functions                    ; 54        ;
-;     -- <=2 input functions                  ; 36        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 173       ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 27        ;
-;     -- Dedicated logic registers            ; 27        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 76        ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-; Maximum fan-out node                        ; estado[1] ;
-; Maximum fan-out                             ; 27        ;
-; Total fan-out                               ; 649       ;
-; Average fan-out                             ; 2.35      ;
-+---------------------------------------------+-----------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
-; |teste                     ; 173 (0)           ; 27 (0)       ; 0           ; 0            ; 0       ; 0         ; 76   ; 0            ; |teste                                              ; work         ;
-;    |out_ctrl:inst|         ; 27 (27)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_ctrl:inst                                ; work         ;
-;    |out_num:inst2|         ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_num:inst2                                ; work         ;
-;       |binbcd:inst|        ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_num:inst2|binbcd:inst                    ; work         ;
-;       |decoder7:inst2|     ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_num:inst2|decoder7:inst2                 ; work         ;
-;    |out_num:inst3|         ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_num:inst3                                ; work         ;
-;       |binbcd:inst|        ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_num:inst3|binbcd:inst                    ; work         ;
-;       |decoder7:inst2|     ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_num:inst3|decoder7:inst2                 ; work         ;
-;    |out_res:inst4|         ; 74 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4                                ; work         ;
-;       |binbcd:inst3|       ; 35 (35)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|binbcd:inst3                   ; work         ;
-;       |comp2bin:inst|      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|comp2bin:inst                  ; work         ;
-;          |ula:u1|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|comp2bin:inst|ula:u1           ; work         ;
-;             |fadder:f3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|comp2bin:inst|ula:u1|fadder:f3 ; work         ;
-;             |fadder:f5|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|comp2bin:inst|ula:u1|fadder:f5 ; work         ;
-;       |decoder7:inst4|     ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|decoder7:inst4                 ; work         ;
-;       |decoder7:inst5|     ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|decoder7:inst5                 ; work         ;
-;       |mult_mux2:inst2|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |teste|out_res:inst4|mult_mux2:inst2                ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                ;
-+-----------------------------------------------------+-------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                 ; Free of Timing Hazards ;
-+-----------------------------------------------------+-------------------------------------+------------------------+
-; out_num:inst2|binbcd:inst|bcd0[0]                   ; out_num:inst2|binbcd:inst|WideOr17  ; yes                    ;
-; out_num:inst2|binbcd:inst|bcd0[1]                   ; out_num:inst2|binbcd:inst|WideOr17  ; yes                    ;
-; out_num:inst2|binbcd:inst|bcd0[2]                   ; out_num:inst2|binbcd:inst|WideOr17  ; yes                    ;
-; out_num:inst2|binbcd:inst|bcd0[3]                   ; out_num:inst2|binbcd:inst|WideOr17  ; yes                    ;
-; out_num:inst3|binbcd:inst|bcd0[0]                   ; out_num:inst3|binbcd:inst|WideOr17  ; yes                    ;
-; out_num:inst3|binbcd:inst|bcd0[1]                   ; out_num:inst3|binbcd:inst|WideOr17  ; yes                    ;
-; out_num:inst3|binbcd:inst|bcd0[2]                   ; out_num:inst3|binbcd:inst|WideOr17  ; yes                    ;
-; out_num:inst3|binbcd:inst|bcd0[3]                   ; out_num:inst3|binbcd:inst|WideOr17  ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd0[0]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd0[1]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd0[2]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd0[3]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd1[0]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd1[1]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd1[2]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:inst4|binbcd:inst3|bcd1[3]                  ; out_res:inst4|binbcd:inst3|WideOr17 ; yes                    ;
-; Number of user-specified and inferred latches = 16  ;                                     ;                        ;
-+-----------------------------------------------------+-------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 27    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |teste|out_ctrl:inst|numRes[1]  ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |teste|out_ctrl:inst|numB[0]    ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |teste|out_ctrl:inst|apaga_d[1] ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |teste|out_ctrl:inst|numA[0]    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "out_res:inst4|comp2bin:inst|ula:u1|fadder:f7"                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "out_res:inst4|comp2bin:inst|ula:u1" ;
-+---------+-------+----------+-----------------------------------+
-; Port    ; Type  ; Severity ; Details                           ;
-+---------+-------+----------+-----------------------------------+
-; B[7..1] ; Input ; Info     ; Stuck at GND                      ;
-; B[0]    ; Input ; Info     ; Stuck at VCC                      ;
-; op      ; Input ; Info     ; Stuck at VCC                      ;
-+---------+-------+----------+-----------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Dec 04 20:22:28 2018
+    Info: Processing started: Tue Dec 04 20:35:13 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project_final -c project_final
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file seletorop.sv
+    Info (12023): Found entity 1: seletorOP
 Info (12021): Found 1 design units, including 1 entities, in source file memnum.bdf
     Info (12023): Found entity 1: memnum
 Info (12021): Found 1 design units, including 1 entities, in source file seletorsave.sv
@@ -358,11 +196,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file out_num
     Info (12023): Found entity 1: out_num
 Info (12021): Found 1 design units, including 1 entities, in source file out_res.bdf
     Info (12023): Found entity 1: out_res
-Info (12021): Found 1 design units, including 1 entities, in source file teste.bdf
-    Info (12023): Found entity 1: teste
-Info (12127): Elaborating entity "teste" for the top level hierarchy
-Info (12128): Elaborating entity "out_num" for hierarchy "out_num:inst2"
-Info (12128): Elaborating entity "decoder7" for hierarchy "out_num:inst2|decoder7:inst2"
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Warning (275089): Not all bits in bus "LEDR[17..9]" are used
+Warning (275080): Converted elements in bus name "LEDR" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "LEDR[17]" to "LEDR17"
+    Warning (275081): Converted element name(s) from "LEDR[16]" to "LEDR16"
+    Warning (275081): Converted element name(s) from "LEDR[15]" to "LEDR15"
+    Warning (275081): Converted element name(s) from "LEDR[14]" to "LEDR14"
+    Warning (275081): Converted element name(s) from "LEDR[12]" to "LEDR12"
+    Warning (275081): Converted element name(s) from "LEDR[11]" to "LEDR11"
+    Warning (275081): Converted element name(s) from "LEDR[10]" to "LEDR10"
+    Warning (275081): Converted element name(s) from "LEDR[9]" to "LEDR9"
+Info (12128): Elaborating entity "teclado" for hierarchy "teclado:key_binder"
+Info (12128): Elaborating entity "controlador" for hierarchy "teclado:key_binder|controlador:U0"
+Info (12128): Elaborating entity "Debouncer" for hierarchy "teclado:key_binder|controlador:U0|Debouncer:d0"
+Info (12128): Elaborating entity "out_res" for hierarchy "out_res:num_res"
+Info (12128): Elaborating entity "decoder7" for hierarchy "out_res:num_res|decoder7:inst4"
 Warning (10240): Verilog HDL Always Construct warning at decoder7.v(10): inferring latch(es) for variable "Out", which holds its previous value in one or more paths through the always construct
 Info (10041): Inferred latch for "Out[0]" at decoder7.v(35)
 Info (10041): Inferred latch for "Out[1]" at decoder7.v(35)
@@ -371,7 +220,7 @@ Info (10041): Inferred latch for "Out[3]" at decoder7.v(35)
 Info (10041): Inferred latch for "Out[4]" at decoder7.v(35)
 Info (10041): Inferred latch for "Out[5]" at decoder7.v(35)
 Info (10041): Inferred latch for "Out[6]" at decoder7.v(35)
-Info (12128): Elaborating entity "binbcd" for hierarchy "out_num:inst2|binbcd:inst"
+Info (12128): Elaborating entity "binbcd" for hierarchy "out_res:num_res|binbcd:inst3"
 Warning (10270): Verilog HDL Case Statement warning at binbcd.sv(8): incomplete case statement has no default case item
 Warning (10240): Verilog HDL Always Construct warning at binbcd.sv(8): inferring latch(es) for variable "bcd1", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at binbcd.sv(8): inferring latch(es) for variable "bcd0", which holds its previous value in one or more paths through the always construct
@@ -383,72 +232,25 @@ Info (10041): Inferred latch for "bcd1[0]" at binbcd.sv(8)
 Info (10041): Inferred latch for "bcd1[1]" at binbcd.sv(8)
 Info (10041): Inferred latch for "bcd1[2]" at binbcd.sv(8)
 Info (10041): Inferred latch for "bcd1[3]" at binbcd.sv(8)
-Info (12128): Elaborating entity "out_ctrl" for hierarchy "out_ctrl:inst"
-Info (12128): Elaborating entity "out_res" for hierarchy "out_res:inst4"
-Info (12128): Elaborating entity "mult_mux2" for hierarchy "out_res:inst4|mult_mux2:inst2"
-Info (12128): Elaborating entity "comp2bin" for hierarchy "out_res:inst4|comp2bin:inst"
-Info (12128): Elaborating entity "ula" for hierarchy "out_res:inst4|comp2bin:inst|ula:u1"
-Info (12128): Elaborating entity "mux2" for hierarchy "out_res:inst4|comp2bin:inst|ula:u1|mux2:m0"
-Info (12128): Elaborating entity "fadder" for hierarchy "out_res:inst4|comp2bin:inst|ula:u1|fadder:f0"
-Warning (13012): Latch out_num:inst2|binbcd:inst|bcd0[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numA[7]
-Warning (13012): Latch out_num:inst2|binbcd:inst|bcd0[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numA[7]
-Warning (13012): Latch out_num:inst2|binbcd:inst|bcd0[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numA[7]
-Warning (13012): Latch out_num:inst3|binbcd:inst|bcd0[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numB[7]
-Warning (13012): Latch out_num:inst3|binbcd:inst|bcd0[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numB[7]
-Warning (13012): Latch out_num:inst3|binbcd:inst|bcd0[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numB[7]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd0[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[0]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd0[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[6]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd0[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[6]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd0[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[6]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd1[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[6]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd1[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[5]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd1[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[3]
-Warning (13012): Latch out_res:inst4|binbcd:inst3|bcd1[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:inst|numRes[4]
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "A1[6]" is stuck at VCC
-    Warning (13410): Pin "A1[5]" is stuck at VCC
-    Warning (13410): Pin "A1[4]" is stuck at VCC
-    Warning (13410): Pin "A1[3]" is stuck at VCC
-    Warning (13410): Pin "A1[2]" is stuck at VCC
-    Warning (13410): Pin "A1[1]" is stuck at VCC
-    Warning (13410): Pin "A1[0]" is stuck at VCC
-    Warning (13410): Pin "B1[6]" is stuck at VCC
-    Warning (13410): Pin "B1[5]" is stuck at VCC
-    Warning (13410): Pin "B1[4]" is stuck at VCC
-    Warning (13410): Pin "B1[3]" is stuck at VCC
-    Warning (13410): Pin "B1[2]" is stuck at VCC
-    Warning (13410): Pin "B1[1]" is stuck at VCC
-    Warning (13410): Pin "B1[0]" is stuck at VCC
-    Warning (13410): Pin "SINAL[5]" is stuck at VCC
-    Warning (13410): Pin "SINAL[4]" is stuck at VCC
-    Warning (13410): Pin "SINAL[3]" is stuck at VCC
-    Warning (13410): Pin "SINAL[2]" is stuck at VCC
-    Warning (13410): Pin "SINAL[1]" is stuck at VCC
-    Warning (13410): Pin "SINAL[0]" is stuck at VCC
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 249 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 27 input pins
-    Info (21059): Implemented 49 output pins
-    Info (21061): Implemented 173 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 55 warnings
-    Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Tue Dec 04 20:22:30 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info (12128): Elaborating entity "mult_mux2" for hierarchy "out_res:num_res|mult_mux2:inst2"
+Info (12128): Elaborating entity "comp2bin" for hierarchy "out_res:num_res|comp2bin:inst"
+Info (12128): Elaborating entity "ula" for hierarchy "out_res:num_res|comp2bin:inst|ula:u1"
+Info (12128): Elaborating entity "mux2" for hierarchy "out_res:num_res|comp2bin:inst|ula:u1|mux2:m0"
+Info (12128): Elaborating entity "fadder" for hierarchy "out_res:num_res|comp2bin:inst|ula:u1|fadder:f0"
+Info (12128): Elaborating entity "out_ctrl" for hierarchy "out_ctrl:display_controller"
+Info (12128): Elaborating entity "operation" for hierarchy "operation:main_controller"
+Warning (10230): Verilog HDL assignment warning at operation.sv(35): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at operation.sv(75): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "memnum" for hierarchy "memnum:inst1"
+Info (12128): Elaborating entity "seletorA" for hierarchy "memnum:inst1|seletorA:inst99"
+Info (12128): Elaborating entity "seletorB" for hierarchy "memnum:inst1|seletorB:inst"
+Info (12128): Elaborating entity "seletorSAVE" for hierarchy "memnum:inst1|seletorSAVE:inst16"
+Info (12128): Elaborating entity "out_num" for hierarchy "out_num:num_b"
+Error (12006): Node instance "inst2" instantiates undefined entity "memop"
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 18 warnings
+    Error: Peak virtual memory: 4599 megabytes
+    Error: Processing ended: Tue Dec 04 20:35:15 2018
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:01
 
 

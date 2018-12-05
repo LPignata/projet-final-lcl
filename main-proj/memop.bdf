@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 160 128 328 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 160 184 328 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLEAR" (rect 5 0 42 12)(font "Arial" ))
+	(text "CLEAR" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 320 32 488 48)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "okOP" (rect 5 0 33 12)(font "Arial" ))
+	(text "okOP" (rect 5 0 32 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 320 8 488 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "InOP" (rect 5 0 30 12)(font "Arial" ))
+	(text "InOP" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -82,6 +82,22 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 456 184 632 200)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "outOP" (rect 90 0 120 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 344 80 376 96)
@@ -201,10 +217,6 @@ applicable agreement for further details.
 	(pt 400 120)
 )
 (connector
-	(pt 400 120)
-	(pt 400 56)
-)
-(connector
 	(pt 400 56)
 	(pt 520 56)
 )
@@ -248,3 +260,16 @@ applicable agreement for further details.
 	(pt 320 120)
 	(pt 328 120)
 )
+(connector
+	(pt 400 192)
+	(pt 456 192)
+)
+(connector
+	(pt 400 56)
+	(pt 400 120)
+)
+(connector
+	(pt 400 120)
+	(pt 400 192)
+)
+(junction (pt 400 120))

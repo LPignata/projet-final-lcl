@@ -191,7 +191,7 @@ applicable agreement for further details.
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"ZERO_4"
-		"000"
+		"0000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing

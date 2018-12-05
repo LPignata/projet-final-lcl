@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 112 144)
+	(rect 16 16 144 144)
 	(text "memop" (rect 5 0 45 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -51,7 +51,14 @@ applicable agreement for further details.
 		(text "CLEAR" (rect 21 75 61 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
 	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "outOP" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "outOP" (rect 73 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32))
+	)
 	(drawing
-		(rectangle (rect 16 16 80 112))
+		(rectangle (rect 16 16 112 112))
 	)
 )

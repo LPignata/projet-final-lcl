@@ -27,6 +27,7 @@ module operation (
 	parameter ZERO_4 = 4'b0000;
 	reg [1:0] byEstate = VALUE_A;
 	reg [3:0] byTecla = 4'b0000;
+	reg reset = 1;
 	
 	function is_number;
 		input [3:0] func_tecla;
@@ -50,11 +51,16 @@ module operation (
 			estate = byEstate;
 			byTecla = 4'b0000;
 			clearOut = 1;
+			reset = 1;
 		end
 		else if (ready == 1) begin
 			// Se uma tecla for pressionada
 			clearOut = 0;
-			byTecla = tecla;
+			if(reset == 1)
+				byTecla = ZERO_4;
+			else begin
+				byTecla = tecla;
+			end
 			estate = byEstate;
 			readyOut = ~ready;
 			// Primeiro estado, leitura do primeiro valor e de operação
@@ -64,19 +70,23 @@ module operation (
 					memoryOut[3:0] = byTecla;*/
 					memoryOut = numberA;
 					signedMemory = 1;
+					reset = 0;
 				end
 				else if (byTecla == RECOVERY) begin
 					numberA = memoryIn;
 					signedNumberA = 1;
+					reset = 0;
 				end
 				else if (is_operator(byTecla) == 1) begin
 					operation = (byTecla == SUB)?1:0;
 					byEstate = VALUE_B;
+					reset = 0;
 				end
 				else if (is_number(byTecla) == 1) begin
 					numberA[7:4] = ZERO_4;
 					numberA[3:0] = byTecla;
 					signedNumberA = 1;
+					reset = 0;
 				end
 			end
 			// Segundo estado, leitura do segundo valor e igualdade
@@ -120,8 +130,8 @@ module operation (
 			signedMemory = 0;
 			signedNumberA = 0;
 			signedNumberB = 0;
-			signedOperation = 0;
 			readyOut = ~ready;
+			estate = byEstate;
 		end
 	end
 	

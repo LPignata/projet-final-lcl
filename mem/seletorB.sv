@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 module seletorB(input logic okB, input[7:0] q, input[7:0]num, output [7:0]d);
 
 always@(*)
@@ -12,6 +13,8 @@ always@(*)
 
 endmodule
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 module seletorB(input logic okB, input[7:0] q, input[7:0]num, output [7:0]d);
 
 always@(*)
@@ -24,4 +27,7 @@ always@(*)
 	end
 
 endmodule
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # -------------------------------------------------------------------------- #
 #
 # Copyright (C) 1991-2013 Altera Corporation
@@ -30,6 +31,8 @@ DATE = "00:33:15  December 03, 2018"
 
 PROJECT_REVISION = "memnum"
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 # -------------------------------------------------------------------------- #
 #
 # Copyright (C) 1991-2013 Altera Corporation
@@ -60,4 +63,7 @@ DATE = "00:33:15  December 03, 2018"
 # Revisions
 
 PROJECT_REVISION = "memnum"
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -3283,6 +3284,8 @@ applicable agreement for further details.
 (junction (pt 808 640))
 (junction (pt 640 640))
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -6566,4 +6569,7 @@ applicable agreement for further details.
 (junction (pt 720 640))
 (junction (pt 808 640))
 (junction (pt 640 640))
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

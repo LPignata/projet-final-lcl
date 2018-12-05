@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analysis & Synthesis report for memnum
 Mon Dec 03 11:35:46 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
@@ -263,6 +264,8 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warning
 
 
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 Analysis & Synthesis report for memnum
 Mon Dec 03 11:35:46 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
@@ -526,4 +529,7 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warning
     Info: Total CPU time (on all processors): 00:00:02
 
 
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

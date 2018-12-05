@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fitter Status : Successful - Mon Dec 03 11:35:54 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : memnum
@@ -16,6 +17,8 @@ Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 Fitter Status : Successful - Mon Dec 03 11:35:54 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : memnum
@@ -32,4 +35,7 @@ Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

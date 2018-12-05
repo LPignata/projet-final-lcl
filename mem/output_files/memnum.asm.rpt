@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Assembler report for memnum
 Mon Dec 03 11:35:58 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
@@ -130,6 +131,8 @@ Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
 
 
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 Assembler report for memnum
 Mon Dec 03 11:35:58 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
@@ -260,4 +263,7 @@ Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Total CPU time (on all processors): 00:00:03
 
 
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

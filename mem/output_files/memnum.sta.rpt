@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 TimeQuest Timing Analyzer report for memnum
 Mon Dec 03 11:36:01 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
@@ -745,6 +746,8 @@ Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 wa
 
 
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 TimeQuest Timing Analyzer report for memnum
 Mon Dec 03 11:36:01 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
@@ -1490,4 +1493,7 @@ Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 wa
     Info: Total CPU time (on all processors): 00:00:01
 
 
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

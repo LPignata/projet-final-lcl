@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  -- Copyright (C) 1991-2013 Altera Corporation
  -- Your use of Altera Corporation's design tools, logic functions 
  -- and other software and tools, and its AMPP partner logic 
@@ -742,6 +743,8 @@ GND*                         : Y24       :        :                   :         
 GND*                         : Y25       :        :                   :         : 6         :                
 GND*                         : Y26       :        :                   :         : 6         :                
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
  -- Copyright (C) 1991-2013 Altera Corporation
  -- Your use of Altera Corporation's design tools, logic functions 
  -- and other software and tools, and its AMPP partner logic 
@@ -1484,4 +1487,7 @@ GND*                         : Y23       :        :                   :         
 GND*                         : Y24       :        :                   :         : 6         :                
 GND*                         : Y25       :        :                   :         : 6         :                
 GND*                         : Y26       :        :                   :         : 6         :                
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133

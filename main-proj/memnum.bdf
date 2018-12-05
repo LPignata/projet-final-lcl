@@ -120,10 +120,14 @@ applicable agreement for further details.
 	(rect -80 584 88 600)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 <<<<<<< HEAD
+<<<<<<< HEAD
 	(text "okSAVE" (rect 5 0 46 12)(font "Arial" ))
 =======
 	(text "okSAVE" (rect 5 0 45 12)(font "Arial" ))
 >>>>>>> masterv2
+=======
+	(text "okSAVE" (rect 5 0 45 12)(font "Arial" ))
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -140,10 +144,14 @@ applicable agreement for further details.
 	(rect -80 616 88 632)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 <<<<<<< HEAD
+<<<<<<< HEAD
 	(text "InSAVE[7..0]" (rect 5 0 69 12)(font "Arial" ))
 =======
 	(text "InSAVE[7..0]" (rect 5 0 68 12)(font "Arial" ))
 >>>>>>> masterv2
+=======
+	(text "InSAVE[7..0]" (rect 5 0 68 12)(font "Arial" ))
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1010,6 +1018,7 @@ applicable agreement for further details.
 )
 (symbol
 <<<<<<< HEAD
+<<<<<<< HEAD
 	(rect 1168 280 1328 392)
 	(text "seletorB" (rect 5 0 45 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
@@ -1048,6 +1057,8 @@ applicable agreement for further details.
 (symbol
 =======
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 	(rect 192 144 256 224)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst90" (rect 3 68 32 80)(font "Arial" ))
@@ -1885,7 +1896,10 @@ applicable agreement for further details.
 	)
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 (symbol
 	(rect 1168 280 1328 392)
 	(text "seletorB" (rect 5 0 45 12)(font "Arial" ))
@@ -1922,7 +1936,10 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 144 96))
 	)
 )
+<<<<<<< HEAD
 >>>>>>> masterv2
+=======
+>>>>>>> d00b66f51affabbb7ed1a24ef214f000a1e06133
 (connector
 	(pt 280 184)
 	(pt 280 240)

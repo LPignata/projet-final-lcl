@@ -49,7 +49,7 @@ module controlador (
 		assign valor={linha,cold};
 	
 			
-	always @(posedge clk)
+	always @(negedge clk)
 		if (contador>=1000000 && ~ready)
 		begin	
 			contador<=0;
@@ -65,7 +65,7 @@ module controlador (
 	
 	assign ready = (valor[3:0]==4'b0000 ? 1'b0 : 1'b1);
 
-	always @(posedge clk)
+	always @(negedge clk)
 			case (valor)
 				8'b00010001: tecla<=4'b0001;
 				8'b00010010: tecla<=4'b0010;
@@ -113,7 +113,7 @@ module Debouncer
 
 reg [1:0] FF = 2'b0;
 
-always @(posedge iClock)
+always @(negedge iClock)
 	FF <= { FF[0], iBouncy };
 	
 reg [18:0] Counter = 19'b0;
@@ -122,7 +122,7 @@ wire CarryOut;
 
 assign { CarryOut, NextCounter } = Counter + 1'b1;
 
-always @(posedge iClock)
+always @(negedge iClock)
 	if (^FF)
 		Counter <= 19'b0;
 	else if (!CarryOut)
@@ -130,7 +130,7 @@ always @(posedge iClock)
 		
 reg State = 1'b0;
 		
-always @(posedge iClock)
+always @(negedge iClock)
 	if (CarryOut)
 		State <= FF[1];
 		

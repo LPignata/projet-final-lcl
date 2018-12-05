@@ -1,0 +1,45 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -4.360
+TNS   : -606.669
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'CLOCK_50'
+Slack : -0.936
+TNS   : -20.984
+
+Type  : Slow Model Removal 'CLOCK_50'
+Slack : 1.536
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -216.380
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.570
+TNS   : -194.386
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'CLOCK_50'
+Slack : -0.288
+TNS   : -6.172
+
+Type  : Fast Model Removal 'CLOCK_50'
+Slack : 1.083
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -216.380
+
+------------------------------------------------------------

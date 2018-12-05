@@ -20,9 +20,15 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
+<<<<<<< HEAD
 	(rect 16 16 248 256)
 	(text "operation" (rect 5 0 40 12)(font "Arial" ))
 	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+=======
+	(rect 16 16 248 224)
+	(text "operation" (rect 5 0 40 12)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+>>>>>>> masterv2
 	(port
 		(pt 0 32)
 		(input)
@@ -117,20 +123,31 @@ applicable agreement for further details.
 	(port
 		(pt 232 144)
 		(output)
+<<<<<<< HEAD
 		(text "signedOperation" (rect 0 0 62 12)(font "Arial" ))
 		(text "signedOperation" (rect 149 139 211 151)(font "Arial" ))
+=======
+		(text "clearOut" (rect 0 0 33 12)(font "Arial" ))
+		(text "clearOut" (rect 178 139 211 151)(font "Arial" ))
+>>>>>>> masterv2
 		(line (pt 232 144)(pt 216 144)(line_width 1))
 	)
 	(port
 		(pt 232 160)
 		(output)
+<<<<<<< HEAD
 		(text "clearOut" (rect 0 0 33 12)(font "Arial" ))
 		(text "clearOut" (rect 178 155 211 167)(font "Arial" ))
+=======
+		(text "readyOut" (rect 0 0 37 12)(font "Arial" ))
+		(text "readyOut" (rect 174 155 211 167)(font "Arial" ))
+>>>>>>> masterv2
 		(line (pt 232 160)(pt 216 160)(line_width 1))
 	)
 	(port
 		(pt 232 176)
 		(output)
+<<<<<<< HEAD
 		(text "readyOut" (rect 0 0 37 12)(font "Arial" ))
 		(text "readyOut" (rect 174 171 211 183)(font "Arial" ))
 		(line (pt 232 176)(pt 216 176)(line_width 1))
@@ -148,6 +165,11 @@ applicable agreement for further details.
 		(text "debug" (rect 0 0 23 12)(font "Arial" ))
 		(text "debug" (rect 188 203 211 215)(font "Arial" ))
 		(line (pt 232 208)(pt 216 208)(line_width 1))
+=======
+		(text "estate[1..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "estate[1..0]" (rect 169 171 211 183)(font "Arial" ))
+		(line (pt 232 176)(pt 216 176)(line_width 3))
+>>>>>>> masterv2
 	)
 	(parameter
 		"ADD"
@@ -166,12 +188,20 @@ applicable agreement for further details.
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"SAVE"
+<<<<<<< HEAD
 		"1110"
+=======
+		"1111"
+>>>>>>> masterv2
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"RECOVERY"
+<<<<<<< HEAD
 		"1111"
+=======
+		"1110"
+>>>>>>> masterv2
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -191,11 +221,19 @@ applicable agreement for further details.
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"ZERO_4"
+<<<<<<< HEAD
 		"000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
 		(rectangle (rect 16 16 216 224)(line_width 1))
+=======
+		"0000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 216 192)(line_width 1))
+>>>>>>> masterv2
 	)
 	(annotation_block (parameter)(rect 248 -64 348 16))
 )

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module seletorB(input[1:0] state, input[7:0] q, input[7:0]num, output [7:0]d);
 
 always@(*)
@@ -10,3 +11,17 @@ always@(*)
 	end
 
 endmodule
+=======
+module seletorB(input[1:0] state, input[7:0] q, input[7:0]num, output [7:0]d);
+
+always@(*)
+	
+	if(state == 2'b01) begin
+		d = num;
+	end
+	else begin
+		d = q;
+	end
+
+endmodule
+>>>>>>> masterv2

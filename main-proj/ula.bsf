@@ -51,13 +51,6 @@ applicable agreement for further details.
 		(text "S[7..0]" (rect 106 27 131 39)(font "Arial" ))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
-	(port
-		(pt 152 48)
-		(output)
-		(text "sinal" (rect 0 0 16 12)(font "Arial" ))
-		(text "sinal" (rect 115 43 131 55)(font "Arial" ))
-		(line (pt 152 48)(pt 136 48)(line_width 1))
-	)
 	(drawing
 		(rectangle (rect 16 16 136 96)(line_width 1))
 	)

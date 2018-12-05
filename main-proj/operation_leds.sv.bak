@@ -1,0 +1,12 @@
+module operation_leds(
+	input op,
+	input [2:0] estate,
+	output led1,
+	output led0
+);
+
+always @(*) begin
+	
+end
+
+endmodule

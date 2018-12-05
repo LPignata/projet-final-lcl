@@ -506,6 +506,10 @@ module binbcd (
 					  bcd1 = 4'b1001;
 					  bcd0 = 4'b1001;
 					  end
+			default : begin
+					  bcd1 = 4'b0000;
+					  bcd0 = 4'b1111;
+					  end
 		endcase
 
 endmodule

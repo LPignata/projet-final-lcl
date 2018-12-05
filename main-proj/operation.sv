@@ -12,17 +12,15 @@ module operation (
 	output signedMemory,
 	output signedNumberA,
 	output signedNumberB,
-	output signedOperation,
 	output clearOut,
 	output readyOut,
-	output [1:0] estate, 
-	output debug );
+	output [1:0] estate);
 
 	parameter ADD = 4'b1100;
 	parameter SUB = 4'b1011;
 	parameter IGUAL = 4'b1101;
-	parameter SAVE = 4'b1110;
-	parameter RECOVERY = 4'b1111;
+	parameter SAVE = 4'b1111;
+	parameter RECOVERY = 4'b1110;
 	parameter VALUE_A = 2'b00;
 	parameter VALUE_B = 2'b01;
 	parameter VALUE_IGUAL = 2'b10;
@@ -46,9 +44,10 @@ module operation (
 
 	always @(negedge Clock)
 	begin
-		if (clearIn == 1) begin
+		if (clearIn == 0) begin
 			// Iniciando
 			byEstate = VALUE_A;
+			estate = byEstate;
 			byTecla = 4'b0000;
 			clearOut = 1;
 		end
@@ -57,22 +56,21 @@ module operation (
 			clearOut = 0;
 			byTecla = tecla;
 			estate = byEstate;
-			readyOut = ready;
-			debug = is_number(byTecla);
+			readyOut = ~ready;
 			// Primeiro estado, leitura do primeiro valor e de operação
 			if (byEstate == VALUE_A) begin
 				if (byTecla == SAVE) begin
-					memoryOut[7:4] = ZERO_4;
-					memoryOut[3:0] = byTecla;
+					/*memoryOut[7:4] = ZERO_4;
+					memoryOut[3:0] = byTecla;*/
+					memoryOut = numberA;
 					signedMemory = 1;
 				end
 				else if (byTecla == RECOVERY) begin
-					signedNumberA = 1;
 					numberA = memoryIn;
+					signedNumberA = 1;
 				end
 				else if (is_operator(byTecla) == 1) begin
 					operation = (byTecla == SUB)?1:0;
-					signedOperation = 1;
 					byEstate = VALUE_B;
 				end
 				else if (is_number(byTecla) == 1) begin
@@ -84,8 +82,9 @@ module operation (
 			// Segundo estado, leitura do segundo valor e igualdade
 			else if (byEstate == VALUE_B) begin
 				if (byTecla == SAVE) begin
-					memoryOut[7:4] = ZERO_4;
-					memoryOut[3:0] = byTecla;
+					/*memoryOut[7:4] = ZERO_4;
+					memoryOut[3:0] = byTecla;*/
+					memoryOut = numberB;
 					signedMemory = 1;
 				end
 				else if (byTecla == RECOVERY) begin
@@ -107,7 +106,7 @@ module operation (
 					memoryOut = result;
 					signedMemory = 1;
 				end
-				else if (is_number(byTecla) == 1) begin
+				else if (is_number(byTecla) == 1 || byTecla == RECOVERY) begin
 					byEstate = VALUE_A;
 					numberA = 8'b00000000;
 					signedNumberA = 1;
@@ -122,7 +121,7 @@ module operation (
 			signedNumberA = 0;
 			signedNumberB = 0;
 			signedOperation = 0;
-			readyOut = ready;
+			readyOut = ~ready;
 		end
 	end
 	

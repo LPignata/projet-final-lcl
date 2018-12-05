@@ -1,0 +1,22 @@
+module check_0left(
+	input [3:0] num,
+	input apaga,
+	output zera
+);
+
+always @(*)
+	begin
+		if(apaga == 0) begin
+			if(num == 4'b0000) begin
+				zera = 1;
+			end
+			else begin
+				zera = 0;
+			end
+		end
+		else if(apaga == 1) begin
+		
+		end
+	end
+	
+endmodule

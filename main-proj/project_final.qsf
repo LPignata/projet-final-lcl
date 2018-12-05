@@ -505,4 +505,7 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/simu.vwf"
+set_global_assignment -name SYSTEMVERILOG_FILE check_0left.sv
+set_global_assignment -name SYSTEMVERILOG_FILE operator_leds.sv
+set_global_assignment -name SYSTEMVERILOG_FILE operation_leds.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

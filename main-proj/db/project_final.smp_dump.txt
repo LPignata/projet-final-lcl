@@ -1,5 +1,5 @@
 
-State Machine - |main|operation:main_controller|byEstate
+State Machine - |main|operation:fsm|byEstate
 Name byEstate.VALUE_A byEstate.VALUE_IGUAL byEstate.VALUE_B 
 byEstate.VALUE_A 0 0 0 
 byEstate.VALUE_B 1 0 1 

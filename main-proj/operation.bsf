@@ -142,13 +142,6 @@ applicable agreement for further details.
 		(text "estate[1..0]" (rect 169 187 211 199)(font "Arial" ))
 		(line (pt 232 192)(pt 216 192)(line_width 3))
 	)
-	(port
-		(pt 232 208)
-		(output)
-		(text "debug" (rect 0 0 23 12)(font "Arial" ))
-		(text "debug" (rect 188 203 211 215)(font "Arial" ))
-		(line (pt 232 208)(pt 216 208)(line_width 1))
-	)
 	(parameter
 		"ADD"
 		"1100"
@@ -166,12 +159,12 @@ applicable agreement for further details.
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"SAVE"
-		"1110"
+		"1111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"RECOVERY"
-		"1111"
+		"1110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter

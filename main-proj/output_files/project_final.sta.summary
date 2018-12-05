@@ -3,115 +3,43 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -4.288
-TNS   : -613.730
-
-Type  : Slow Model Setup 'out_ctrl:display_controller|numRes[0]'
-Slack : -2.236
-TNS   : -11.944
-
-Type  : Slow Model Setup 'out_ctrl:display_controller|numA[2]'
-Slack : -2.210
-TNS   : -5.818
-
-Type  : Slow Model Setup 'out_ctrl:display_controller|numB[2]'
-Slack : -1.753
-TNS   : -5.105
-
-Type  : Slow Model Hold 'out_ctrl:display_controller|numRes[0]'
-Slack : -5.199
-TNS   : -28.014
-
-Type  : Slow Model Hold 'out_ctrl:display_controller|numA[2]'
-Slack : -2.962
-TNS   : -9.340
-
-Type  : Slow Model Hold 'out_ctrl:display_controller|numB[2]'
-Slack : -2.549
-TNS   : -7.086
+Slack : -4.081
+TNS   : -611.276
 
 Type  : Slow Model Hold 'CLOCK_50'
 Slack : 0.391
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'CLOCK_50'
-Slack : -1.190
-TNS   : -24.534
+Slack : -0.970
+TNS   : -21.764
 
 Type  : Slow Model Removal 'CLOCK_50'
-Slack : 1.552
+Slack : 1.558
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -217.380
-
-Type  : Slow Model Minimum Pulse Width 'out_ctrl:display_controller|numRes[0]'
-Slack : -0.393
-TNS   : -16.506
-
-Type  : Slow Model Minimum Pulse Width 'out_ctrl:display_controller|numA[2]'
-Slack : 0.500
-TNS   : 0.000
-
-Type  : Slow Model Minimum Pulse Width 'out_ctrl:display_controller|numB[2]'
-Slack : 0.500
-TNS   : 0.000
+TNS   : -215.380
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -1.528
-TNS   : -197.795
-
-Type  : Fast Model Setup 'out_ctrl:display_controller|numA[2]'
-Slack : -0.599
-TNS   : -1.464
-
-Type  : Fast Model Setup 'out_ctrl:display_controller|numRes[0]'
-Slack : -0.582
-TNS   : -2.662
-
-Type  : Fast Model Setup 'out_ctrl:display_controller|numB[2]'
-Slack : -0.406
-TNS   : -1.132
-
-Type  : Fast Model Hold 'out_ctrl:display_controller|numRes[0]'
-Slack : -2.636
-TNS   : -15.365
-
-Type  : Fast Model Hold 'out_ctrl:display_controller|numA[2]'
-Slack : -1.668
-TNS   : -4.857
-
-Type  : Fast Model Hold 'out_ctrl:display_controller|numB[2]'
-Slack : -1.461
-TNS   : -3.874
+Slack : -1.450
+TNS   : -197.516
 
 Type  : Fast Model Hold 'CLOCK_50'
 Slack : 0.215
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'CLOCK_50'
-Slack : -0.395
-TNS   : -7.572
+Slack : -0.296
+TNS   : -6.433
 
 Type  : Fast Model Removal 'CLOCK_50'
-Slack : 1.095
+Slack : 1.097
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -217.380
-
-Type  : Fast Model Minimum Pulse Width 'out_ctrl:display_controller|numRes[0]'
-Slack : 0.116
-TNS   : 0.000
-
-Type  : Fast Model Minimum Pulse Width 'out_ctrl:display_controller|numA[2]'
-Slack : 0.500
-TNS   : 0.000
-
-Type  : Fast Model Minimum Pulse Width 'out_ctrl:display_controller|numB[2]'
-Slack : 0.500
-TNS   : 0.000
+TNS   : -215.380
 
 ------------------------------------------------------------

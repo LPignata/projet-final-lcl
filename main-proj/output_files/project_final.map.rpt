@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project_final
-Wed Dec 05 11:21:46 2018
+Wed Dec 05 14:43:47 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,18 +13,18 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |main|operation:main_controller|byEstate
+  8. State Machine - |main|operation:fsm|byEstate
   9. User-Specified and Inferred Latches
  10. General Register Statistics
  11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: operation:main_controller
+ 13. Parameter Settings for User Entity Instance: operation:fsm
  14. Port Connectivity Checks: "out_res:num_res|comp2bin:inst|ula:u1|fadder:f7"
  15. Port Connectivity Checks: "out_res:num_res|comp2bin:inst|ula:u1"
- 16. Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d3"
- 17. Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d2"
- 18. Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d1"
- 19. Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d0"
+ 16. Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d3"
+ 17. Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d2"
+ 18. Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d1"
+ 19. Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d0"
  20. Elapsed Time Per Partition
  21. Analysis & Synthesis Messages
 
@@ -52,16 +52,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 05 11:21:46 2018           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 05 14:43:47 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; project_final                                   ;
 ; Top-level Entity Name              ; main                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 507                                             ;
-;     Total combinational functions  ; 470                                             ;
-;     Dedicated logic registers      ; 216                                             ;
-; Total registers                    ; 216                                             ;
-; Total pins                         ; 106                                             ;
+; Total logic elements               ; 563                                             ;
+;     Total combinational functions  ; 529                                             ;
+;     Dedicated logic registers      ; 214                                             ;
+; Total registers                    ; 214                                             ;
+; Total pins                         ; 121                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -166,29 +166,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
-; seletorOP.sv                     ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/seletorOP.sv   ;         ;
-; memnum.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/memnum.bdf     ;         ;
-; seletorSAVE.sv                   ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/seletorSAVE.sv ;         ;
-; seletorB.sv                      ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/seletorB.sv    ;         ;
-; seletorA.sv                      ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/seletorA.sv    ;         ;
-; operation.sv                     ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/operation.sv   ;         ;
-; binbcd.sv                        ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/binbcd.sv      ;         ;
-; ula.sv                           ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/ula.sv         ;         ;
-; teclado.v                        ; yes             ; User Verilog HDL File                    ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/teclado.v      ;         ;
-; decoder7.v                       ; yes             ; User Verilog HDL File                    ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/decoder7.v     ;         ;
-; main.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/main.bdf       ;         ;
-; comp2bin.sv                      ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/comp2bin.sv    ;         ;
-; mult_mux2.sv                     ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/mult_mux2.sv   ;         ;
-; out_ctrl.sv                      ; yes             ; User SystemVerilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_ctrl.sv    ;         ;
-; out_num.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_num.bdf    ;         ;
-; out_res.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_res.bdf    ;         ;
-; memop.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/memop.bdf      ;         ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
+; memnum.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/memnum.bdf        ;         ;
+; seletorSAVE.sv                   ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/seletorSAVE.sv    ;         ;
+; seletorB.sv                      ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/seletorB.sv       ;         ;
+; seletorA.sv                      ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/seletorA.sv       ;         ;
+; operation.sv                     ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/operation.sv      ;         ;
+; binbcd.sv                        ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/binbcd.sv         ;         ;
+; ula.sv                           ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/ula.sv            ;         ;
+; teclado.v                        ; yes             ; User Verilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/teclado.v         ;         ;
+; decoder7.v                       ; yes             ; User Verilog HDL File              ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/decoder7.v        ;         ;
+; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/main.bdf          ;         ;
+; comp2bin.sv                      ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/comp2bin.sv       ;         ;
+; mult_mux2.sv                     ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/mult_mux2.sv      ;         ;
+; out_ctrl.sv                      ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_ctrl.sv       ;         ;
+; out_num.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_num.bdf       ;         ;
+; out_res.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/out_res.bdf       ;         ;
+; check_0left.sv                   ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/check_0left.sv    ;         ;
+; operation_leds.sv                ; yes             ; User SystemVerilog HDL File        ; D:/Documentos/Projeto-LCL/projet-final-lcl/main-proj/operation_leds.sv ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -196,79 +196,85 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 507      ;
+; Estimated Total logic elements              ; 563      ;
 ;                                             ;          ;
-; Total combinational functions               ; 470      ;
+; Total combinational functions               ; 529      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 148      ;
-;     -- 3 input functions                    ; 160      ;
-;     -- <=2 input functions                  ; 162      ;
+;     -- 4 input functions                    ; 195      ;
+;     -- 3 input functions                    ; 156      ;
+;     -- <=2 input functions                  ; 178      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 363      ;
+;     -- normal mode                          ; 422      ;
 ;     -- arithmetic mode                      ; 107      ;
 ;                                             ;          ;
-; Total registers                             ; 216      ;
-;     -- Dedicated logic registers            ; 216      ;
+; Total registers                             ; 214      ;
+;     -- Dedicated logic registers            ; 214      ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 106      ;
+; I/O pins                                    ; 121      ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 216      ;
-; Total fan-out                               ; 2064     ;
-; Average fan-out                             ; 2.61     ;
+; Maximum fan-out                             ; 214      ;
+; Total fan-out                               ; 2293     ;
+; Average fan-out                             ; 2.65     ;
 +---------------------------------------------+----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; |main                            ; 470 (0)           ; 216 (0)      ; 0           ; 0            ; 0       ; 0         ; 106  ; 0            ; |main                                                ; work         ;
-;    |memnum:inst1|                ; 0 (0)             ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|memnum:inst1                                   ; work         ;
-;    |memop:inst6|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|memop:inst6                                    ; work         ;
-;    |operation:main_controller|   ; 52 (52)           ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|operation:main_controller                      ; work         ;
-;    |out_ctrl:display_controller| ; 28 (28)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_ctrl:display_controller                    ; work         ;
-;    |out_num:num_a|               ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a                                  ; work         ;
-;       |binbcd:inst|              ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a|binbcd:inst                      ; work         ;
-;       |decoder7:inst2|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a|decoder7:inst2                   ; work         ;
-;    |out_num:num_b|               ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b                                  ; work         ;
-;       |binbcd:inst|              ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b|binbcd:inst                      ; work         ;
-;       |decoder7:inst2|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b|decoder7:inst2                   ; work         ;
-;    |out_res:num_res|             ; 74 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res                                ; work         ;
-;       |binbcd:inst3|             ; 35 (35)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|binbcd:inst3                   ; work         ;
-;       |comp2bin:inst|            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst                  ; work         ;
-;          |ula:u1|                ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst|ula:u1           ; work         ;
-;             |fadder:f3|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f3 ; work         ;
-;             |fadder:f5|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f5 ; work         ;
-;       |decoder7:inst4|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|decoder7:inst4                 ; work         ;
-;       |decoder7:inst5|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|decoder7:inst5                 ; work         ;
-;       |mult_mux2:inst2|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|mult_mux2:inst2                ; work         ;
-;    |teclado:inst2|               ; 228 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:inst2                                  ; work         ;
-;       |controlador:U0|           ; 228 (60)          ; 128 (40)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:inst2|controlador:U0                   ; work         ;
-;          |Debouncer:d0|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:inst2|controlador:U0|Debouncer:d0      ; work         ;
-;          |Debouncer:d1|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:inst2|controlador:U0|Debouncer:d1      ; work         ;
-;          |Debouncer:d2|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:inst2|controlador:U0|Debouncer:d2      ; work         ;
-;          |Debouncer:d3|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:inst2|controlador:U0|Debouncer:d3      ; work         ;
-;    |ula:ula_circuit|             ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit                                ; work         ;
-;       |fadder:f0|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f0                      ; work         ;
-;       |fadder:f1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f1                      ; work         ;
-;       |fadder:f3|                ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f3                      ; work         ;
-;       |fadder:f4|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f4                      ; work         ;
-;       |fadder:f5|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f5                      ; work         ;
-;       |fadder:f6|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f6                      ; work         ;
-;       |fadder:f7|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f7                      ; work         ;
-;       |mux2:m2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|mux2:m2                        ; work         ;
-;       |mux2:m4|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|mux2:m4                        ; work         ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Library Name ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
+; |main                            ; 529 (0)           ; 214 (0)      ; 0           ; 0            ; 0       ; 0         ; 121  ; 0            ; |main                                                  ; work         ;
+;    |memnum:memory|               ; 0 (0)             ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|memnum:memory                                    ; work         ;
+;    |operation:fsm|               ; 56 (56)           ; 35 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|operation:fsm                                    ; work         ;
+;    |operation_leds:inst|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|operation_leds:inst                              ; work         ;
+;    |out_ctrl:display_controller| ; 27 (27)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_ctrl:display_controller                      ; work         ;
+;    |out_num:num_a|               ; 63 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a                                    ; work         ;
+;       |binbcd:inst|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a|binbcd:inst                        ; work         ;
+;       |check_0left:inst1|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a|check_0left:inst1                  ; work         ;
+;       |decoder7:inst2|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a|decoder7:inst2                     ; work         ;
+;       |decoder7:inst3|           ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_a|decoder7:inst3                     ; work         ;
+;    |out_num:num_b|               ; 63 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b                                    ; work         ;
+;       |binbcd:inst|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b|binbcd:inst                        ; work         ;
+;       |check_0left:inst1|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b|check_0left:inst1                  ; work         ;
+;       |decoder7:inst2|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b|decoder7:inst2                     ; work         ;
+;       |decoder7:inst3|           ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_num:num_b|decoder7:inst3                     ; work         ;
+;    |out_res:num_res|             ; 72 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res                                  ; work         ;
+;       |binbcd:inst3|             ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|binbcd:inst3                     ; work         ;
+;       |comp2bin:inst|            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst                    ; work         ;
+;          |ula:u1|                ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst|ula:u1             ; work         ;
+;             |fadder:f3|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f3   ; work         ;
+;             |fadder:f5|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|comp2bin:inst|ula:u1|fadder:f5   ; work         ;
+;       |decoder7:inst4|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|decoder7:inst4                   ; work         ;
+;       |decoder7:inst5|           ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|decoder7:inst5                   ; work         ;
+;       |mult_mux2:inst2|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|out_res:num_res|mult_mux2:inst2                  ; work         ;
+;    |teclado:teclado_ctrl|        ; 227 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:teclado_ctrl                             ; work         ;
+;       |controlador:U0|           ; 227 (59)          ; 128 (40)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:teclado_ctrl|controlador:U0              ; work         ;
+;          |Debouncer:d0|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d0 ; work         ;
+;          |Debouncer:d1|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d1 ; work         ;
+;          |Debouncer:d2|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d2 ; work         ;
+;          |Debouncer:d3|          ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d3 ; work         ;
+;    |ula:ula_circuit|             ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit                                  ; work         ;
+;       |fadder:f0|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f0                        ; work         ;
+;       |fadder:f1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f1                        ; work         ;
+;       |fadder:f2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f2                        ; work         ;
+;       |fadder:f3|                ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f3                        ; work         ;
+;       |fadder:f4|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f4                        ; work         ;
+;       |fadder:f5|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f5                        ; work         ;
+;       |fadder:f6|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f6                        ; work         ;
+;       |fadder:f7|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|fadder:f7                        ; work         ;
+;       |mux2:m2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|mux2:m2                          ; work         ;
+;       |mux2:m4|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|mux2:m4                          ; work         ;
+;       |mux2:m5|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ula:ula_circuit|mux2:m5                          ; work         ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------------+
-; State Machine - |main|operation:main_controller|byEstate                          ;
+; State Machine - |main|operation:fsm|byEstate                                      ;
 +----------------------+------------------+----------------------+------------------+
 ; Name                 ; byEstate.VALUE_A ; byEstate.VALUE_IGUAL ; byEstate.VALUE_B ;
 +----------------------+------------------+----------------------+------------------+
@@ -278,29 +284,15 @@ Encoding Type:  One-Hot
 +----------------------+------------------+----------------------+------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                  ;
-+-----------------------------------------------------+---------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                   ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------------------------+------------------------+
-; out_res:num_res|binbcd:inst3|bcd0[0]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:num_res|binbcd:inst3|bcd0[1]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:num_res|binbcd:inst3|bcd0[2]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:num_res|binbcd:inst3|bcd0[3]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:num_res|binbcd:inst3|bcd1[0]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:num_res|binbcd:inst3|bcd1[1]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:num_res|binbcd:inst3|bcd1[2]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_res:num_res|binbcd:inst3|bcd1[3]                ; out_res:num_res|binbcd:inst3|WideOr17 ; yes                    ;
-; out_num:num_b|binbcd:inst|bcd0[0]                   ; out_num:num_b|binbcd:inst|WideOr17    ; yes                    ;
-; out_num:num_b|binbcd:inst|bcd0[1]                   ; out_num:num_b|binbcd:inst|WideOr17    ; yes                    ;
-; out_num:num_b|binbcd:inst|bcd0[2]                   ; out_num:num_b|binbcd:inst|WideOr17    ; yes                    ;
-; out_num:num_b|binbcd:inst|bcd0[3]                   ; out_num:num_b|binbcd:inst|WideOr17    ; yes                    ;
-; out_num:num_a|binbcd:inst|bcd0[0]                   ; out_num:num_a|binbcd:inst|WideOr17    ; yes                    ;
-; out_num:num_a|binbcd:inst|bcd0[1]                   ; out_num:num_a|binbcd:inst|WideOr17    ; yes                    ;
-; out_num:num_a|binbcd:inst|bcd0[2]                   ; out_num:num_a|binbcd:inst|WideOr17    ; yes                    ;
-; out_num:num_a|binbcd:inst|bcd0[3]                   ; out_num:num_a|binbcd:inst|WideOr17    ; yes                    ;
-; Number of user-specified and inferred latches = 16  ;                                       ;                        ;
-+-----------------------------------------------------+---------------------------------------+------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; operation_leds:inst|led1                           ; VCC                 ; yes                    ;
+; operation_leds:inst|led0                           ; VCC                 ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -309,65 +301,65 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 216   ;
+; Total registers                              ; 214   ;
 ; Number of registers using Synchronous Clear  ; 40    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 139   ;
+; Number of registers using Clock Enable       ; 138   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; teclado:inst2|controlador:U0|linha[0]  ; 4       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
++--------------------------------------------------------+
+; Inverted Register Statistics                           ;
++----------------------------------------------+---------+
+; Inverted Register                            ; Fan out ;
++----------------------------------------------+---------+
+; teclado:teclado_ctrl|controlador:U0|linha[0] ; 4       ;
+; Total number of inverted registers = 1       ;         ;
++----------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:inst2|controlador:U0|Debouncer:d0|Counter[4] ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:inst2|controlador:U0|Debouncer:d1|Counter[8] ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:inst2|controlador:U0|Debouncer:d2|Counter[7] ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:inst2|controlador:U0|Debouncer:d3|Counter[4] ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|out_ctrl:display_controller|numRes[7]                ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|out_ctrl:display_controller|numB[2]                  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |main|out_ctrl:display_controller|apaga_d[1]               ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|out_ctrl:display_controller|numA[1]                  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|operation:main_controller|memoryOut[7]               ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|operation:main_controller|memoryOut[1]               ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |main|operation:main_controller|numberB[5]                 ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |main|operation:main_controller|numberB[0]                 ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |main|operation:main_controller|numberA[4]                 ;
-; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |main|teclado:inst2|controlador:U0|tecla[0]                ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|operation:main_controller|numberA[3]                 ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 6 LEs                ; 10 LEs                 ; No         ; |main|operation:main_controller|byEstate                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |main|operation:fsm|estate[1]                                      ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d0|Counter[9]  ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d1|Counter[14] ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d2|Counter[0]  ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |main|teclado:teclado_ctrl|controlador:U0|Debouncer:d3|Counter[0]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|out_ctrl:display_controller|numRes[3]                        ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|out_ctrl:display_controller|numB[3]                          ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |main|out_ctrl:display_controller|apaga_d[1]                       ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|out_ctrl:display_controller|numA[3]                          ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |main|operation:fsm|memoryOut[6]                                   ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |main|operation:fsm|numberB[5]                                     ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |main|operation:fsm|numberB[0]                                     ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |main|operation:fsm|numberA[7]                                     ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main|operation:fsm|numberA[0]                                     ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |main|teclado:teclado_ctrl|controlador:U0|tecla[1]                 ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 6 LEs                ; 10 LEs                 ; No         ; |main|operation:fsm|byEstate                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: operation:main_controller ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; ADD            ; 1100  ; Unsigned Binary                               ;
-; SUB            ; 1011  ; Unsigned Binary                               ;
-; IGUAL          ; 1101  ; Unsigned Binary                               ;
-; SAVE           ; 1110  ; Unsigned Binary                               ;
-; RECOVERY       ; 1111  ; Unsigned Binary                               ;
-; VALUE_A        ; 00    ; Unsigned Binary                               ;
-; VALUE_B        ; 01    ; Unsigned Binary                               ;
-; VALUE_IGUAL    ; 10    ; Unsigned Binary                               ;
-; ZERO_4         ; 000   ; Unsigned Binary                               ;
-+----------------+-------+-----------------------------------------------+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: operation:fsm ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; ADD            ; 1100  ; Unsigned Binary                   ;
+; SUB            ; 1011  ; Unsigned Binary                   ;
+; IGUAL          ; 1101  ; Unsigned Binary                   ;
+; SAVE           ; 1111  ; Unsigned Binary                   ;
+; RECOVERY       ; 1110  ; Unsigned Binary                   ;
+; VALUE_A        ; 00    ; Unsigned Binary                   ;
+; VALUE_B        ; 01    ; Unsigned Binary                   ;
+; VALUE_IGUAL    ; 10    ; Unsigned Binary                   ;
+; ZERO_4         ; 0000  ; Unsigned Binary                   ;
++----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -391,40 +383,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d3" ;
-+--------+--------+----------+------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                  ;
-+--------+--------+----------+------------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                   ;
-+--------+--------+----------+------------------------------------------+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d3" ;
++--------+--------+----------+-------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                         ;
++--------+--------+----------+-------------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                          ;
++--------+--------+----------+-------------------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d2" ;
-+--------+--------+----------+------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                  ;
-+--------+--------+----------+------------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                   ;
-+--------+--------+----------+------------------------------------------+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d2" ;
++--------+--------+----------+-------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                         ;
++--------+--------+----------+-------------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                          ;
++--------+--------+----------+-------------------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d1" ;
-+--------+--------+----------+------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                  ;
-+--------+--------+----------+------------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                   ;
-+--------+--------+----------+------------------------------------------+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d1" ;
++--------+--------+----------+-------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                         ;
++--------+--------+----------+-------------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                          ;
++--------+--------+----------+-------------------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:inst2|controlador:U0|Debouncer:d0" ;
-+--------+--------+----------+------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                  ;
-+--------+--------+----------+------------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                   ;
-+--------+--------+----------+------------------------------------------+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:teclado_ctrl|controlador:U0|Debouncer:d0" ;
++--------+--------+----------+-------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                         ;
++--------+--------+----------+-------------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                          ;
++--------+--------+----------+-------------------------------------------------+
 
 
 +-------------------------------+
@@ -442,7 +434,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 05 11:21:44 2018
+    Info: Processing started: Wed Dec 05 14:43:44 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project_final -c project_final
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file seletorop.sv
@@ -486,11 +478,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file fdiv.sv
     Info (12023): Found entity 1: fdiv
 Info (12021): Found 1 design units, including 1 entities, in source file teste.bdf
     Info (12023): Found entity 1: teste
+Info (12021): Found 1 design units, including 1 entities, in source file check_0left.sv
+    Info (12023): Found entity 1: check_0left
+Warning (12019): Can't analyze file -- file operator_leds.sv is missing
+Info (12021): Found 1 design units, including 1 entities, in source file operation_leds.sv
+    Info (12023): Found entity 1: operation_leds
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (275008): Primitive "GND" of instance "inst" not used
-Info (12128): Elaborating entity "teclado" for hierarchy "teclado:inst2"
-Info (12128): Elaborating entity "controlador" for hierarchy "teclado:inst2|controlador:U0"
-Info (12128): Elaborating entity "Debouncer" for hierarchy "teclado:inst2|controlador:U0|Debouncer:d0"
+Info (12128): Elaborating entity "teclado" for hierarchy "teclado:teclado_ctrl"
+Info (12128): Elaborating entity "controlador" for hierarchy "teclado:teclado_ctrl|controlador:U0"
+Info (12128): Elaborating entity "Debouncer" for hierarchy "teclado:teclado_ctrl|controlador:U0|Debouncer:d0"
 Info (12128): Elaborating entity "out_res" for hierarchy "out_res:num_res"
 Info (12128): Elaborating entity "decoder7" for hierarchy "out_res:num_res|decoder7:inst4"
 Warning (10240): Verilog HDL Always Construct warning at decoder7.v(10): inferring latch(es) for variable "Out", which holds its previous value in one or more paths through the always construct
@@ -502,35 +498,28 @@ Info (10041): Inferred latch for "Out[4]" at decoder7.v(35)
 Info (10041): Inferred latch for "Out[5]" at decoder7.v(35)
 Info (10041): Inferred latch for "Out[6]" at decoder7.v(35)
 Info (12128): Elaborating entity "binbcd" for hierarchy "out_res:num_res|binbcd:inst3"
-Warning (10270): Verilog HDL Case Statement warning at binbcd.sv(8): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at binbcd.sv(8): inferring latch(es) for variable "bcd1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at binbcd.sv(8): inferring latch(es) for variable "bcd0", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "bcd0[0]" at binbcd.sv(8)
-Info (10041): Inferred latch for "bcd0[1]" at binbcd.sv(8)
-Info (10041): Inferred latch for "bcd0[2]" at binbcd.sv(8)
-Info (10041): Inferred latch for "bcd0[3]" at binbcd.sv(8)
-Info (10041): Inferred latch for "bcd1[0]" at binbcd.sv(8)
-Info (10041): Inferred latch for "bcd1[1]" at binbcd.sv(8)
-Info (10041): Inferred latch for "bcd1[2]" at binbcd.sv(8)
-Info (10041): Inferred latch for "bcd1[3]" at binbcd.sv(8)
 Info (12128): Elaborating entity "mult_mux2" for hierarchy "out_res:num_res|mult_mux2:inst2"
 Info (12128): Elaborating entity "comp2bin" for hierarchy "out_res:num_res|comp2bin:inst"
 Info (12128): Elaborating entity "ula" for hierarchy "out_res:num_res|comp2bin:inst|ula:u1"
 Info (12128): Elaborating entity "mux2" for hierarchy "out_res:num_res|comp2bin:inst|ula:u1|mux2:m0"
 Info (12128): Elaborating entity "fadder" for hierarchy "out_res:num_res|comp2bin:inst|ula:u1|fadder:f0"
 Info (12128): Elaborating entity "out_ctrl" for hierarchy "out_ctrl:display_controller"
-Info (12128): Elaborating entity "operation" for hierarchy "operation:main_controller"
-Warning (10230): Verilog HDL assignment warning at operation.sv(35): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "operation" for hierarchy "operation:fsm"
 Warning (10230): Verilog HDL assignment warning at operation.sv(74): truncated value with size 32 to match size of target (1)
-Info (12128): Elaborating entity "memnum" for hierarchy "memnum:inst1"
-Info (12128): Elaborating entity "seletorA" for hierarchy "memnum:inst1|seletorA:inst99"
-Info (12128): Elaborating entity "seletorB" for hierarchy "memnum:inst1|seletorB:instb2"
-Info (12128): Elaborating entity "seletorSAVE" for hierarchy "memnum:inst1|seletorSAVE:inst16"
-Warning (12125): Using design file memop.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: memop
-Info (12128): Elaborating entity "memop" for hierarchy "memop:inst6"
-Info (12128): Elaborating entity "seletorOP" for hierarchy "memop:inst6|seletorOP:inst3"
+Warning (10230): Verilog HDL assignment warning at operation.sv(34): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "memnum" for hierarchy "memnum:memory"
+Info (12128): Elaborating entity "seletorA" for hierarchy "memnum:memory|seletorA:inst99"
+Info (12128): Elaborating entity "seletorB" for hierarchy "memnum:memory|seletorB:instb2"
+Info (12128): Elaborating entity "seletorSAVE" for hierarchy "memnum:memory|seletorSAVE:inst16"
 Info (12128): Elaborating entity "out_num" for hierarchy "out_num:num_b"
+Info (12128): Elaborating entity "check_0left" for hierarchy "out_num:num_b|check_0left:inst1"
+Warning (10240): Verilog HDL Always Construct warning at check_0left.sv(9): inferring latch(es) for variable "zera", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "zera" at check_0left.sv(15)
+Info (12128): Elaborating entity "operation_leds" for hierarchy "operation_leds:inst"
+Warning (10240): Verilog HDL Always Construct warning at operation_leds.sv(9): inferring latch(es) for variable "led1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at operation_leds.sv(9): inferring latch(es) for variable "led0", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "led0" at operation_leds.sv(13)
+Info (10041): Inferred latch for "led1" at operation_leds.sv(13)
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[25]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[23]" and its non-tri-state driver.
@@ -569,34 +558,6 @@ Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "GPIO_1" has no driver
     Warning (13040): Bidir "GPIO_1" has no driver
     Warning (13040): Bidir "GPIO_1" has no driver
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd0[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[0]
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd0[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[6]
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd0[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[6]
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd0[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[6]
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd1[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[6]
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd1[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[5]
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd1[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[3]
-Warning (13012): Latch out_res:num_res|binbcd:inst3|bcd1[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numRes[4]
-Warning (13012): Latch out_num:num_b|binbcd:inst|bcd0[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numB[7]
-Warning (13012): Latch out_num:num_b|binbcd:inst|bcd0[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numB[7]
-Warning (13012): Latch out_num:num_b|binbcd:inst|bcd0[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numB[7]
-Warning (13012): Latch out_num:num_a|binbcd:inst|bcd0[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numA[7]
-Warning (13012): Latch out_num:num_a|binbcd:inst|bcd0[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numA[7]
-Warning (13012): Latch out_num:num_a|binbcd:inst|bcd0[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal out_ctrl:display_controller|numA[7]
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
@@ -609,37 +570,40 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX2[2]" is stuck at VCC
     Warning (13410): Pin "HEX2[1]" is stuck at VCC
     Warning (13410): Pin "HEX2[0]" is stuck at VCC
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC
-    Warning (13410): Pin "HEX5[5]" is stuck at VCC
-    Warning (13410): Pin "HEX5[4]" is stuck at VCC
-    Warning (13410): Pin "HEX5[3]" is stuck at VCC
-    Warning (13410): Pin "HEX5[2]" is stuck at VCC
-    Warning (13410): Pin "HEX5[1]" is stuck at VCC
-    Warning (13410): Pin "HEX5[0]" is stuck at VCC
-    Warning (13410): Pin "HEX7[6]" is stuck at VCC
-    Warning (13410): Pin "HEX7[5]" is stuck at VCC
-    Warning (13410): Pin "HEX7[4]" is stuck at VCC
-    Warning (13410): Pin "HEX7[3]" is stuck at VCC
-    Warning (13410): Pin "HEX7[2]" is stuck at VCC
-    Warning (13410): Pin "HEX7[1]" is stuck at VCC
-    Warning (13410): Pin "HEX7[0]" is stuck at VCC
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC
+    Warning (13410): Pin "LEDG[7]" is stuck at GND
+    Warning (13410): Pin "LEDG[6]" is stuck at GND
+    Warning (13410): Pin "LEDG[5]" is stuck at GND
+    Warning (13410): Pin "LEDG[4]" is stuck at GND
+    Warning (13410): Pin "LEDG[3]" is stuck at GND
+    Warning (13410): Pin "LEDG[2]" is stuck at GND
     Warning (13410): Pin "LEDR[13]" is stuck at GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND
     Warning (13410): Pin "LEDR[7]" is stuck at GND
     Warning (13410): Pin "LEDR[6]" is stuck at GND
     Warning (13410): Pin "LEDR[5]" is stuck at GND
     Warning (13410): Pin "LEDR[4]" is stuck at GND
+    Warning (13410): Pin "LEDR[3]" is stuck at GND
+    Warning (13410): Pin "LEDR[2]" is stuck at GND
+    Warning (13410): Pin "LEDR[1]" is stuck at GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 619 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 689 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 68 output pins
+    Info (21059): Implemented 83 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 513 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 108 warnings
+    Info (21061): Implemented 568 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 82 warnings
     Info: Peak virtual memory: 4624 megabytes
-    Info: Processing ended: Wed Dec 05 11:21:46 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Wed Dec 05 14:43:47 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

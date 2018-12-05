@@ -1,45 +1,44 @@
 |main
-GPIO_1[0] <> teclado:inst2.GPIO_1[0]
-GPIO_1[1] <> teclado:inst2.GPIO_1[1]
-GPIO_1[2] <> teclado:inst2.GPIO_1[2]
-GPIO_1[3] <> teclado:inst2.GPIO_1[3]
-GPIO_1[4] <> teclado:inst2.GPIO_1[4]
-GPIO_1[5] <> teclado:inst2.GPIO_1[5]
-GPIO_1[6] <> teclado:inst2.GPIO_1[6]
-GPIO_1[7] <> teclado:inst2.GPIO_1[7]
-GPIO_1[8] <> teclado:inst2.GPIO_1[8]
-GPIO_1[9] <> teclado:inst2.GPIO_1[9]
-GPIO_1[10] <> teclado:inst2.GPIO_1[10]
-GPIO_1[11] <> teclado:inst2.GPIO_1[11]
-GPIO_1[12] <> teclado:inst2.GPIO_1[12]
-GPIO_1[13] <> teclado:inst2.GPIO_1[13]
-GPIO_1[14] <> teclado:inst2.GPIO_1[14]
-GPIO_1[15] <> teclado:inst2.GPIO_1[15]
-GPIO_1[16] <> teclado:inst2.GPIO_1[16]
-GPIO_1[17] <> teclado:inst2.GPIO_1[17]
-GPIO_1[18] <> teclado:inst2.GPIO_1[18]
-GPIO_1[19] <> teclado:inst2.GPIO_1[19]
-GPIO_1[20] <> teclado:inst2.GPIO_1[20]
-GPIO_1[21] <> teclado:inst2.GPIO_1[21]
-GPIO_1[22] <> teclado:inst2.GPIO_1[22]
-GPIO_1[23] <> teclado:inst2.GPIO_1[23]
-GPIO_1[24] <> teclado:inst2.GPIO_1[24]
-GPIO_1[25] <> teclado:inst2.GPIO_1[25]
-GPIO_1[26] <> teclado:inst2.GPIO_1[26]
-GPIO_1[27] <> teclado:inst2.GPIO_1[27]
-GPIO_1[28] <> teclado:inst2.GPIO_1[28]
-GPIO_1[29] <> teclado:inst2.GPIO_1[29]
-GPIO_1[30] <> teclado:inst2.GPIO_1[30]
-GPIO_1[31] <> teclado:inst2.GPIO_1[31]
-GPIO_1[32] <> teclado:inst2.GPIO_1[32]
-GPIO_1[33] <> teclado:inst2.GPIO_1[33]
-GPIO_1[34] <> teclado:inst2.GPIO_1[34]
-GPIO_1[35] <> teclado:inst2.GPIO_1[35]
-CLOCK_50 => teclado:inst2.CLOCK_50
+GPIO_1[0] <> teclado:teclado_ctrl.GPIO_1[0]
+GPIO_1[1] <> teclado:teclado_ctrl.GPIO_1[1]
+GPIO_1[2] <> teclado:teclado_ctrl.GPIO_1[2]
+GPIO_1[3] <> teclado:teclado_ctrl.GPIO_1[3]
+GPIO_1[4] <> teclado:teclado_ctrl.GPIO_1[4]
+GPIO_1[5] <> teclado:teclado_ctrl.GPIO_1[5]
+GPIO_1[6] <> teclado:teclado_ctrl.GPIO_1[6]
+GPIO_1[7] <> teclado:teclado_ctrl.GPIO_1[7]
+GPIO_1[8] <> teclado:teclado_ctrl.GPIO_1[8]
+GPIO_1[9] <> teclado:teclado_ctrl.GPIO_1[9]
+GPIO_1[10] <> teclado:teclado_ctrl.GPIO_1[10]
+GPIO_1[11] <> teclado:teclado_ctrl.GPIO_1[11]
+GPIO_1[12] <> teclado:teclado_ctrl.GPIO_1[12]
+GPIO_1[13] <> teclado:teclado_ctrl.GPIO_1[13]
+GPIO_1[14] <> teclado:teclado_ctrl.GPIO_1[14]
+GPIO_1[15] <> teclado:teclado_ctrl.GPIO_1[15]
+GPIO_1[16] <> teclado:teclado_ctrl.GPIO_1[16]
+GPIO_1[17] <> teclado:teclado_ctrl.GPIO_1[17]
+GPIO_1[18] <> teclado:teclado_ctrl.GPIO_1[18]
+GPIO_1[19] <> teclado:teclado_ctrl.GPIO_1[19]
+GPIO_1[20] <> teclado:teclado_ctrl.GPIO_1[20]
+GPIO_1[21] <> teclado:teclado_ctrl.GPIO_1[21]
+GPIO_1[22] <> teclado:teclado_ctrl.GPIO_1[22]
+GPIO_1[23] <> teclado:teclado_ctrl.GPIO_1[23]
+GPIO_1[24] <> teclado:teclado_ctrl.GPIO_1[24]
+GPIO_1[25] <> teclado:teclado_ctrl.GPIO_1[25]
+GPIO_1[26] <> teclado:teclado_ctrl.GPIO_1[26]
+GPIO_1[27] <> teclado:teclado_ctrl.GPIO_1[27]
+GPIO_1[28] <> teclado:teclado_ctrl.GPIO_1[28]
+GPIO_1[29] <> teclado:teclado_ctrl.GPIO_1[29]
+GPIO_1[30] <> teclado:teclado_ctrl.GPIO_1[30]
+GPIO_1[31] <> teclado:teclado_ctrl.GPIO_1[31]
+GPIO_1[32] <> teclado:teclado_ctrl.GPIO_1[32]
+GPIO_1[33] <> teclado:teclado_ctrl.GPIO_1[33]
+GPIO_1[34] <> teclado:teclado_ctrl.GPIO_1[34]
+GPIO_1[35] <> teclado:teclado_ctrl.GPIO_1[35]
+CLOCK_50 => teclado:teclado_ctrl.CLOCK_50
 CLOCK_50 => out_ctrl:display_controller.clk
-CLOCK_50 => operation:main_controller.Clock
-CLOCK_50 => memnum:inst1.CLK
-CLOCK_50 => memop:inst6.CLK
+CLOCK_50 => operation:fsm.Clock
+CLOCK_50 => memnum:memory.CLK
 HEX0[0] <= out_res:num_res.lsd[0]
 HEX0[1] <= out_res:num_res.lsd[1]
 HEX0[2] <= out_res:num_res.lsd[2]
@@ -47,7 +46,7 @@ HEX0[3] <= out_res:num_res.lsd[3]
 HEX0[4] <= out_res:num_res.lsd[4]
 HEX0[5] <= out_res:num_res.lsd[5]
 HEX0[6] <= out_res:num_res.lsd[6]
-KEY[0] => operation:main_controller.clearIn
+KEY[0] => operation:fsm.clearIn
 HEX1[0] <= out_res:num_res.msd[0]
 HEX1[1] <= out_res:num_res.msd[1]
 HEX1[2] <= out_res:num_res.msd[2]
@@ -62,6 +61,13 @@ HEX2[3] <= out_res:num_res.sinal[3]
 HEX2[4] <= out_res:num_res.sinal[4]
 HEX2[5] <= out_res:num_res.sinal[5]
 HEX2[6] <= out_res:num_res.sinal[6]
+HEX3[0] <= not_all[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX3[1] <= not_all[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX3[2] <= not_all[2].DB_MAX_OUTPUT_PORT_TYPE
+HEX3[3] <= not_all[3].DB_MAX_OUTPUT_PORT_TYPE
+HEX3[4] <= not_all[4].DB_MAX_OUTPUT_PORT_TYPE
+HEX3[5] <= not_all[5].DB_MAX_OUTPUT_PORT_TYPE
+HEX3[6] <= not_all[6].DB_MAX_OUTPUT_PORT_TYPE
 HEX4[0] <= out_num:num_b.lsd[0]
 HEX4[1] <= out_num:num_b.lsd[1]
 HEX4[2] <= out_num:num_b.lsd[2]
@@ -90,11 +96,19 @@ HEX7[3] <= out_num:num_a.msd[3]
 HEX7[4] <= out_num:num_a.msd[4]
 HEX7[5] <= out_num:num_a.msd[5]
 HEX7[6] <= out_num:num_a.msd[6]
-LEDG[0] <= operation:main_controller.readyOut
-LEDR[0] <= sA[0].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= sA[1].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= sA[2].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] <= sA[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= operation_leds:inst.led0
+LEDG[1] <= operation_leds:inst.led1
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= <GND>
+LEDG[8] <= operation:fsm.readyOut
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
 LEDR[4] <= <GND>
 LEDR[5] <= <GND>
 LEDR[6] <= <GND>
@@ -111,7 +125,7 @@ LEDR[16] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[17] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|teclado:inst2
+|main|teclado:teclado_ctrl
 GPIO_1[0] <> <UNC>
 GPIO_1[1] <> <UNC>
 GPIO_1[2] <> <UNC>
@@ -152,7 +166,7 @@ tecla[3] <= controlador:U0.tecla
 ready <= controlador:U0.ready
 
 
-|main|teclado:inst2|controlador:U0
+|main|teclado:teclado_ctrl|controlador:U0
 clk => clk.IN4
 linhaN[0] <= linha[0].DB_MAX_OUTPUT_PORT_TYPE
 linhaN[1] <= linha[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -169,7 +183,7 @@ tecla[3] <= tecla[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ready <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|teclado:inst2|controlador:U0|Debouncer:d0
+|main|teclado:teclado_ctrl|controlador:U0|Debouncer:d0
 iClock => Counter[0].CLK
 iClock => Counter[1].CLK
 iClock => Counter[2].CLK
@@ -197,7 +211,7 @@ oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
 oState <= State.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|teclado:inst2|controlador:U0|Debouncer:d1
+|main|teclado:teclado_ctrl|controlador:U0|Debouncer:d1
 iClock => Counter[0].CLK
 iClock => Counter[1].CLK
 iClock => Counter[2].CLK
@@ -225,7 +239,7 @@ oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
 oState <= State.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|teclado:inst2|controlador:U0|Debouncer:d2
+|main|teclado:teclado_ctrl|controlador:U0|Debouncer:d2
 iClock => Counter[0].CLK
 iClock => Counter[1].CLK
 iClock => Counter[2].CLK
@@ -253,7 +267,7 @@ oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
 oState <= State.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|teclado:inst2|controlador:U0|Debouncer:d3
+|main|teclado:teclado_ctrl|controlador:U0|Debouncer:d3
 iClock => Counter[0].CLK
 iClock => Counter[1].CLK
 iClock => Counter[2].CLK
@@ -355,14 +369,14 @@ bin[4] => Decoder0.IN3
 bin[5] => Decoder0.IN2
 bin[6] => Decoder0.IN1
 bin[7] => Decoder0.IN0
-bcd0[0] <= bcd0[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[1] <= bcd0[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[2] <= bcd0[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[3] <= bcd0[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[0] <= bcd1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[1] <= bcd1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[2] <= bcd1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[3] <= bcd1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|out_res:num_res|mult_mux2:inst2
@@ -694,10 +708,9 @@ apaga_d[1] <= apaga_d[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 apaga_d[2] <= apaga_d[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|operation:main_controller
+|main|operation:fsm
 ready => estate.OUTPUTSELECT
 ready => estate.OUTPUTSELECT
-ready => debug.OUTPUTSELECT
 ready => memoryOut.OUTPUTSELECT
 ready => memoryOut.OUTPUTSELECT
 ready => memoryOut.OUTPUTSELECT
@@ -707,15 +720,15 @@ ready => memoryOut.OUTPUTSELECT
 ready => memoryOut.OUTPUTSELECT
 ready => memoryOut.OUTPUTSELECT
 ready => signedMemory.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
+ready => numberA.OUTPUTSELECT
 ready => signedNumberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
-ready => numberA.OUTPUTSELECT
 ready => operation.OUTPUTSELECT
 ready => signedOperation.OUTPUTSELECT
 ready => byEstate.OUTPUTSELECT
@@ -731,49 +744,47 @@ ready => numberB.OUTPUTSELECT
 ready => numberB.OUTPUTSELECT
 ready => signedNumberB.OUTPUTSELECT
 ready => readyOut~reg0.DATAIN
+tecla[0] => Equal0.IN7
 tecla[0] => Equal1.IN7
-tecla[0] => Equal2.IN7
 tecla[0] => numberA.DATAB
 tecla[0] => numberB.DATAB
-tecla[0] => memoryOut.DATAB
 tecla[0] => LessThan0.IN8
-tecla[0] => Equal0.IN3
+tecla[0] => Equal2.IN2
 tecla[0] => Equal3.IN2
-tecla[0] => Equal4.IN2
+tecla[0] => Equal4.IN3
 tecla[0] => Equal5.IN3
+tecla[1] => Equal0.IN6
 tecla[1] => Equal1.IN6
-tecla[1] => Equal2.IN6
 tecla[1] => numberA.DATAB
 tecla[1] => numberB.DATAB
-tecla[1] => memoryOut.DATAB
 tecla[1] => LessThan0.IN7
-tecla[1] => Equal0.IN2
-tecla[1] => Equal3.IN1
-tecla[1] => Equal4.IN3
+tecla[1] => Equal2.IN1
+tecla[1] => Equal3.IN3
+tecla[1] => Equal4.IN2
 tecla[1] => Equal5.IN2
+tecla[2] => Equal0.IN5
 tecla[2] => Equal1.IN5
-tecla[2] => Equal2.IN5
 tecla[2] => numberA.DATAB
 tecla[2] => numberB.DATAB
-tecla[2] => memoryOut.DATAB
 tecla[2] => LessThan0.IN6
-tecla[2] => Equal0.IN1
-tecla[2] => Equal3.IN3
+tecla[2] => Equal2.IN3
+tecla[2] => Equal3.IN1
 tecla[2] => Equal4.IN1
 tecla[2] => Equal5.IN1
+tecla[3] => Equal0.IN4
 tecla[3] => Equal1.IN4
-tecla[3] => Equal2.IN4
 tecla[3] => numberA.DATAB
 tecla[3] => numberB.DATAB
-tecla[3] => memoryOut.DATAB
 tecla[3] => LessThan0.IN5
-tecla[3] => Equal0.IN0
+tecla[3] => Equal2.IN0
 tecla[3] => Equal3.IN0
 tecla[3] => Equal4.IN0
 tecla[3] => Equal5.IN0
 clearIn => byEstate.OUTPUTSELECT
 clearIn => byEstate.OUTPUTSELECT
 clearIn => byEstate.OUTPUTSELECT
+clearIn => estate.OUTPUTSELECT
+clearIn => estate.OUTPUTSELECT
 clearIn => clearOut~reg0.DATAIN
 clearIn => numberB[2]~reg0.ENA
 clearIn => numberB[1]~reg0.ENA
@@ -786,6 +797,7 @@ clearIn => numberB[6]~reg0.ENA
 clearIn => numberB[7]~reg0.ENA
 clearIn => signedOperation~reg0.ENA
 clearIn => operation~reg0.ENA
+clearIn => signedNumberA~reg0.ENA
 clearIn => numberA[0]~reg0.ENA
 clearIn => numberA[1]~reg0.ENA
 clearIn => numberA[2]~reg0.ENA
@@ -794,7 +806,6 @@ clearIn => numberA[4]~reg0.ENA
 clearIn => numberA[5]~reg0.ENA
 clearIn => numberA[6]~reg0.ENA
 clearIn => numberA[7]~reg0.ENA
-clearIn => signedNumberA~reg0.ENA
 clearIn => signedMemory~reg0.ENA
 clearIn => memoryOut[0]~reg0.ENA
 clearIn => memoryOut[1]~reg0.ENA
@@ -804,10 +815,7 @@ clearIn => memoryOut[4]~reg0.ENA
 clearIn => memoryOut[5]~reg0.ENA
 clearIn => memoryOut[6]~reg0.ENA
 clearIn => memoryOut[7]~reg0.ENA
-clearIn => debug~reg0.ENA
 clearIn => readyOut~reg0.ENA
-clearIn => estate[0]~reg0.ENA
-clearIn => estate[1]~reg0.ENA
 Clock => signedNumberB~reg0.CLK
 Clock => numberB[0]~reg0.CLK
 Clock => numberB[1]~reg0.CLK
@@ -819,6 +827,7 @@ Clock => numberB[6]~reg0.CLK
 Clock => numberB[7]~reg0.CLK
 Clock => signedOperation~reg0.CLK
 Clock => operation~reg0.CLK
+Clock => signedNumberA~reg0.CLK
 Clock => numberA[0]~reg0.CLK
 Clock => numberA[1]~reg0.CLK
 Clock => numberA[2]~reg0.CLK
@@ -827,7 +836,6 @@ Clock => numberA[4]~reg0.CLK
 Clock => numberA[5]~reg0.CLK
 Clock => numberA[6]~reg0.CLK
 Clock => numberA[7]~reg0.CLK
-Clock => signedNumberA~reg0.CLK
 Clock => signedMemory~reg0.CLK
 Clock => memoryOut[0]~reg0.CLK
 Clock => memoryOut[1]~reg0.CLK
@@ -837,11 +845,10 @@ Clock => memoryOut[4]~reg0.CLK
 Clock => memoryOut[5]~reg0.CLK
 Clock => memoryOut[6]~reg0.CLK
 Clock => memoryOut[7]~reg0.CLK
-Clock => debug~reg0.CLK
 Clock => readyOut~reg0.CLK
+Clock => clearOut~reg0.CLK
 Clock => estate[0]~reg0.CLK
 Clock => estate[1]~reg0.CLK
-Clock => clearOut~reg0.CLK
 Clock => byEstate~4.DATAIN
 memoryIn[0] => numberA.DATAB
 memoryIn[0] => numberB.DATAB
@@ -900,10 +907,9 @@ clearOut <= clearOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 readyOut <= readyOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estate[0] <= estate[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estate[1] <= estate[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-debug <= debug~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|memnum:inst1
+|main|memnum:memory
 OutA[0] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 OutA[1] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 OutA[2] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
@@ -982,7 +988,7 @@ InSAVE[6] => inst19[6].IN0
 InSAVE[7] => inst19[7].IN0
 
 
-|main|memnum:inst1|seletorA:inst99
+|main|memnum:memory|seletorA:inst99
 okA => d.OUTPUTSELECT
 okA => d.OUTPUTSELECT
 okA => d.OUTPUTSELECT
@@ -1017,7 +1023,7 @@ d[6] <= d.DB_MAX_OUTPUT_PORT_TYPE
 d[7] <= d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|memnum:inst1|seletorB:instb2
+|main|memnum:memory|seletorB:instb2
 okB => d.OUTPUTSELECT
 okB => d.OUTPUTSELECT
 okB => d.OUTPUTSELECT
@@ -1052,7 +1058,7 @@ d[6] <= d.DB_MAX_OUTPUT_PORT_TYPE
 d[7] <= d.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|memnum:inst1|seletorSAVE:inst16
+|main|memnum:memory|seletorSAVE:inst16
 okSAVE => d.OUTPUTSELECT
 okSAVE => d.OUTPUTSELECT
 okSAVE => d.OUTPUTSELECT
@@ -1235,21 +1241,6 @@ S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|memop:inst6
-outOP <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-CLEAR => inst10.ACLR
-CLK => inst10.CLK
-okOP => seletorOP:inst3.okOP
-InOP => seletorOP:inst3.op
-
-
-|main|memop:inst6|seletorOP:inst3
-okOP => d.OUTPUTSELECT
-q => d.DATAA
-op => d.DATAB
-d <= d.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |main|out_num:num_b
 lsd[0] <= decoder7:inst2.Out[0]
 lsd[1] <= decoder7:inst2.Out[1]
@@ -1259,6 +1250,7 @@ lsd[4] <= decoder7:inst2.Out[4]
 lsd[5] <= decoder7:inst2.Out[5]
 lsd[6] <= decoder7:inst2.Out[6]
 reset => decoder7:inst2.apaga
+reset => check_0left:inst1.apaga
 num[0] => binbcd:inst.bin[0]
 num[1] => binbcd:inst.bin[1]
 num[2] => binbcd:inst.bin[2]
@@ -1306,14 +1298,14 @@ bin[4] => Decoder0.IN3
 bin[5] => Decoder0.IN2
 bin[6] => Decoder0.IN1
 bin[7] => Decoder0.IN0
-bcd0[0] <= bcd0[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[1] <= bcd0[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[2] <= bcd0[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[3] <= bcd0[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[0] <= bcd1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[1] <= bcd1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[2] <= bcd1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[3] <= bcd1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|out_num:num_b|decoder7:inst3
@@ -1337,6 +1329,15 @@ Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
 Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|main|out_num:num_b|check_0left:inst1
+num[0] => Equal0.IN3
+num[1] => Equal0.IN2
+num[2] => Equal0.IN1
+num[3] => Equal0.IN0
+apaga => zera.OUTPUTSELECT
+zera <= zera.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |main|out_num:num_a
 lsd[0] <= decoder7:inst2.Out[0]
 lsd[1] <= decoder7:inst2.Out[1]
@@ -1346,6 +1347,7 @@ lsd[4] <= decoder7:inst2.Out[4]
 lsd[5] <= decoder7:inst2.Out[5]
 lsd[6] <= decoder7:inst2.Out[6]
 reset => decoder7:inst2.apaga
+reset => check_0left:inst1.apaga
 num[0] => binbcd:inst.bin[0]
 num[1] => binbcd:inst.bin[1]
 num[2] => binbcd:inst.bin[2]
@@ -1393,14 +1395,14 @@ bin[4] => Decoder0.IN3
 bin[5] => Decoder0.IN2
 bin[6] => Decoder0.IN1
 bin[7] => Decoder0.IN0
-bcd0[0] <= bcd0[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[1] <= bcd0[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[2] <= bcd0[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd0[3] <= bcd0[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[0] <= bcd1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[1] <= bcd1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[2] <= bcd1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-bcd1[3] <= bcd1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|out_num:num_a|decoder7:inst3
@@ -1422,5 +1424,25 @@ Out[3] <= Out[3].DB_MAX_OUTPUT_PORT_TYPE
 Out[4] <= Out[4].DB_MAX_OUTPUT_PORT_TYPE
 Out[5] <= Out[5].DB_MAX_OUTPUT_PORT_TYPE
 Out[6] <= Out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|out_num:num_a|check_0left:inst1
+num[0] => Equal0.IN3
+num[1] => Equal0.IN2
+num[2] => Equal0.IN1
+num[3] => Equal0.IN0
+apaga => zera.OUTPUTSELECT
+zera <= zera.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|operation_leds:inst
+op => led1$latch.DATAIN
+op => led0$latch.DATAIN
+estate[0] => LessThan0.IN4
+estate[0] => Equal0.IN1
+estate[1] => LessThan0.IN3
+estate[1] => Equal0.IN0
+led1 <= led1$latch.DB_MAX_OUTPUT_PORT_TYPE
+led0 <= led0$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
